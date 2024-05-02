@@ -31,6 +31,7 @@ Route::get('/ilceler', function(){
             $New = new Blog;
             $New->title = $item.' '.$row->title;
             $New->category = 1;
+            $New->service = $row->id;
             $New->save();
         }
 

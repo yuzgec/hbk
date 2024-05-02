@@ -57,7 +57,6 @@ class ServiceController extends Controller
 
     }
 
-
     public function show($id)
     {
         $Show = Service::findOrFail($id);
@@ -66,11 +65,7 @@ class ServiceController extends Controller
 
     public function edit($id)
     {
-
-
         $Edit = Service::findOrFail($id);
-
-        //dd($Edit->getMedia('page'));
         $Kategori = ServiceCategory::pluck('title', 'id');
         return view('backend.service.edit', compact('Edit', 'Kategori'));
     }
@@ -105,7 +100,7 @@ class ServiceController extends Controller
         $Update->save();
 
         toast(SWEETALERT_MESSAGE_UPDATE,'success');
-        return redirect()->route('service.index');
+        return redirect()->route('service.index',['category' => $request->category, 'name' => $request->name]);
 
     }
 
