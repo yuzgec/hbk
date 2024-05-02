@@ -2,21 +2,23 @@
 @section('content')
 
     <section class="page-header page-header-modern bg-color-quaternary page-header-md custom-page-header">
-        <div class="container">
-            <div class="row mt-3">
-                <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                    <h1>- {{ $Detail->title }}</h1>
-                    <span class="d-block text-4">İş Kazası Avukatı / kazagecirdim.com.tr</span>
-                </div>
-                <div class="col-md-4 order-1 order-md-2 align-self-center">
-                    <ul class="breadcrumb d-block text-md-end breadcrumb-light">
-                        <li><a href="{{ route('home') }}">ANASAYFA</a></li>
-                        <li><a href="{{ route('blog') }}">BLOG</a></li>
-                    </ul>
+        <section class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url(img/page-header/page-header-services.jpg);">
+            <div class="container">
+                <div class="row mt-2">
+                    <div class="col-md-12 align-self-center p-static order-2 text-center">
+                        <h1 class="text-10">İstanbul {{ $Detail->title }}</strong></h1>
+                        <span class="sub-title">Kepenk Tamiri ve Montajı</span>
+                    </div>
+                    <div class="col-md-12 align-self-center order-1">
+                        <ul class="breadcrumb breadcrumb-light d-block text-center">
+                            <li><a href="{{ route('home')}}">Anasayfa</a></li>
+                            <li><a href="#">Haberler</a></li>
+                            <li class="active">{{ $Detail->title }}</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <div class="container">
         <div class="row pb-4">
@@ -24,7 +26,7 @@
                 <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4"><em>{{ $Detail->title }}</em></h2>
 
                 @if($Detail->getFirstMediaUrl('page'))
-                    <img src="{{ $Detail->getFirstMediaUrl('page') }}" class="img-fluid mb-3" alt="{{ $Detail->title }} - kazagecirdim.com.tr">
+                    <img src="{{ $Detail->getFirstMediaUrl('page') }}" class="img-fluid mb-3" alt="{{ $Detail->title }} - İSTANBUL HBK KEPENK SİSTEMLERİ">
                 @endif
 
                 {!!  $Detail->desc !!}
@@ -35,7 +37,7 @@
 
                     <div class="card border-0 border-radius-0 custom-box-shadow-1 mb-3">
                         <div class="card-body">
-                            <h3 class="text-transform-none font-weight-bold pb-3 mb-4">MAKALELER</h3>
+                            <h3 class="text-transform-none font-weight-bold pb-3 mb-4">HABERLER</h3>
                             <ul class="custom-list-style-1 list list-unstyled font-weight-bold">
                                 @foreach($Blog as $item)
                                     <li>

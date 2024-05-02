@@ -99,7 +99,6 @@
                 <ul class="list list-unstyled list-inline custom-list-style-1 mb-0">
                     <li><a href="{{ route('home')}}">Anasayfa</a></li>
                     <li><a href="{{ route('corporatedetail', 'hakkimizdfa')}}">Hakkımızda</a></li>
-                    <li><a href="{{ route('home')}}">Hizmet Bölgeleri</a></li>
                     <li><a href="{{ route('home')}}">Referanslar</a></li>
                     <li><a href="{{ route('contactus')}}">İletişim</a></li>
                 

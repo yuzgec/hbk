@@ -55,8 +55,8 @@ class HomeController extends Controller
     }
 
     public function service(){
-        SEOMeta::setTitle('İş Kazası Avukatı ');
-        SEOMeta::setDescription("İş Kazası Avukatı ");
+        SEOMeta::setTitle('İstanbul HBK Kepenk Servisi ');
+        SEOMeta::setDescription("İstanbul HBK Kepenk Servisi ");
 
         return view('frontend.service.index');
     }
@@ -66,8 +66,13 @@ class HomeController extends Controller
 
         SEOMeta::setTitle($Detail->title. ' | İstanbul HBK Kepenk Servisi | Kepenk Tamiri');
 
-
         return view('frontend.blog.detail', compact('Detail'));
+    }
+
+    public function servicearea($url){
+        $Detail = Blog::where('slug', $url)->firstOrFail();
+        SEOMeta::setTitle($Detail->title. ' | İstanbul HBK Kepenk Servisi | Kepenk Tamiri');
+        return view('frontend.blog.servicearea', compact('Detail'));
     }
 
     public function corporatedetail($url){

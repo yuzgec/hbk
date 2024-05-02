@@ -13,6 +13,7 @@ Route::get('/kurumsal', [HomeController::class, 'corporate'])->name('corporate')
 Route::get('/sayfa/{url}', [HomeController::class, 'corporatedetail'])->name('corporatedetail');
 Route::get('/hizmetlerimiz', [HomeController::class, 'service'])->name('service');
 Route::get('/hizmet/{url}', [HomeController::class, 'servicedetail'])->name('servicedetail');
+Route::get('/hizmetbolgesi/{url}', [HomeController::class, 'servicearea'])->name('servicearea');
 Route::get('/makaleler', [HomeController::class, 'blog'])->name('blog');
 Route::get('/makale/{url}', [HomeController::class, 'blogdetail'])->name('blogdetail');
 Route::get('/sss', [HomeController::class, 'sss'])->name('sss');
@@ -21,7 +22,7 @@ Route::get('/referanslarimiz', [HomeController::class, 'reference'])->name('refe
 Route::get('/sss', [HomeController::class, 'faq'])->name('faq');
 Route::get('/ekibimiz', [HomeController::class, 'team'])->name('team');
 Route::post('/form', [HomeController::class, 'form'])->name('form');
-Route::get('/ilceler', function(){
+/* Route::get('/ilceler', function(){
 
     $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
     //dd(count($istanbul));
@@ -38,7 +39,7 @@ Route::get('/ilceler', function(){
 
     }
 
-});
+}); */
 
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {
     Route::get('/', 'DashboardController@index')->name('go');
