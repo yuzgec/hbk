@@ -21,23 +21,7 @@ Route::get('/referanslarimiz', [HomeController::class, 'reference'])->name('refe
 Route::get('/sss', [HomeController::class, 'faq'])->name('faq');
 Route::get('/ekibimiz', [HomeController::class, 'team'])->name('team');
 Route::post('/form', [HomeController::class, 'form'])->name('form');
-Route::get('/ilceler', function(){
 
-    $istanbul = ["Adalar", "Bağcılar", "Bahçelievler", "Bakırköy", "Beşiktaş", "Beykoz", "Beyoğlu", "Büyükçekmece", "Çatalca", "Eminönü", "Esenler", "Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
-    $Service = Service::all();
-
-    foreach($istanbul as $item){
-        foreach($Service as $row){
-            $New = new Blog;
-            $New->title = $item.' '.$row->title;
-            $New->category = 1;
-            $New->service = $row->id;
-            $New->save();
-        }
-
-    }
-
-});
 
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {
     Route::get('/', 'DashboardController@index')->name('go');
