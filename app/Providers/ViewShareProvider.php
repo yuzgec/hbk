@@ -24,9 +24,8 @@ class ViewShareProvider extends ServiceProvider
             return Service::orderBy('rank', 'asc')->get();
         }); */
         $Service = Service::orderBy('rank', 'asc')->get();
-        $Blog = Cache::remember('blog',now()->addYear(1), function () {
-            return Blog::all();
-        });
+        $Blog = Blog::all();
+    
 
 
         View::share([
