@@ -20,10 +20,10 @@ class ViewShareProvider extends ServiceProvider
             return Page::with('getCategory')->get();
         });
 
-        $Service = Cache::remember('service',now()->addYear(1), function () {
+/*         $Service = Cache::remember('service',now()->addYear(1), function () {
             return Service::orderBy('rank', 'asc')->get();
-        });
-
+        }); */
+        $Service = Service::orderBy('rank', 'asc')->get();
         $Blog = Cache::remember('blog',now()->addYear(1), function () {
             return Blog::all();
         });
