@@ -25,7 +25,7 @@
                 <div class="card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
                     <div class="card-body text-center px-4 py-5">
                         <h4 class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-3 mb-3">{{ $item->title}}</h4>
-                        <p class="font-weight-light text-color-dark line-height-7 mb-2">Her tür otomatik kepenk sisteminin arızalarını ve bakımını titizlikle yapıyoruz.</p>                    
+                        <p class="font-weight-light text-color-dark line-height-7 mb-2">{{ $item->short}}</p>                    
                     </div>
                 </div>
             </a>
