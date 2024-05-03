@@ -36,7 +36,7 @@
 <div class="owl-carousel-wrapper position-relative z-index-1">
     <div class="owl-carousel owl-theme dots-horizontal-center custom-dots-style-1 dots-dark mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 2}, '992': {'items': 3}, '1200': {'items': 4}, '1440': {'items': 7}}, 'margin': 10, 'stagePadding': 20, 'loop': true, 'nav': false, 'dots': true, 'autoplay': true, 'autoplayTimeout': 3000}">
         @foreach($Blog->where('service', $Detail->id)->where('category',1) as $item)
-            <div class="py-5">
+            <div class="py-3">
                 <a href="{{route('servicearea', $item->slug)}}" title="{{$item->title}} - HBK Kepenk" class="text-decoration-none">
                     <div class="card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
                         <div class="card-body text-center px-2 py-3">
