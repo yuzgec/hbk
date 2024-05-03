@@ -20,7 +20,7 @@ Route::get('/sss', [HomeController::class, 'sss'])->name('sss');
 Route::get('/video-galeri', [HomeController::class, 'video'])->name('video');
 Route::get('/referanslarimiz', [HomeController::class, 'reference'])->name('reference');
 Route::get('/sss', [HomeController::class, 'faq'])->name('faq');
-Route::get('/ekibimiz', [HomeController::class, 'team'])->name('team');
+Route::get('/urunlerimiz', [HomeController::class, 'product'])->name('product');
 Route::post('/form', [HomeController::class, 'form'])->name('form');
 /* Route::get('/ilceler', function(){
     $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];

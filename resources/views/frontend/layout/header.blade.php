@@ -8,19 +8,19 @@
                             <ul class="list list-unstyled list-inline mb-0">
                                 <li class="list-inline-item text-color-dark me-md-4 mb-0">
                                     <i class="icons icon-phone text-color-primary text-4 position-relative top-2 me-1"></i>
-                                    <a href="tel:{{ config('settings.telefon1')}}" class="text-color-dark text-color-hover-primary text-decoration-none">
+                                    <a title="Telefon" href="tel:{{ config('settings.telefon1')}}" class="text-color-dark text-color-hover-primary text-decoration-none">
                                         <strong>{{ config('settings.telefon1')}}</strong>
                                     </a>
                                 </li>
                                 <li class="list-inline-item text-color-dark me-4 mb-0 d-none d-md-inline-block">
                                     <i class="icons icon-envelope text-color-primary text-4 position-relative top-4 me-1"></i>
-                                    <a href="mailto:{{ config('settings.email1')}}" class="text-color-dark text-color-hover-primary text-decoration-none text-2">
+                                    <a title="Email Adresimiz" href="mailto:{{ config('settings.email1')}}" class="text-color-dark text-color-hover-primary text-decoration-none text-2">
                                         {{ config('settings.email1')}}
                                     </a>
                                 </li>
                                 <li class="list-inline-item text-color-dark text-2 mb-0 d-none d-lg-inline-block">
                                     <i class="icons icon-calendar text-color-primary text-3-5 position-relative top-1 me-1"></i>
-                                    7/24 Teknek Destek Hizmeti
+                                    7/24 Teknik Destek Hizmeti
                                 </li>
                             </ul>
                         </div>
@@ -44,15 +44,15 @@
                     <div class="header-row justify-content-between">
                         <div class="header-logo z-index-2 col-lg-2 px-0">
                             <a href="{{ route('home')}}">
-                                <img alt=" {{ config('settings.siteTitle')}}" width="123" data-sticky-width="82" data-sticky-height="40" data-sticky-top="84" src="/logo.jpg">
+                                <img alt="İstanbul HBK Kepenk Tamir ve Montajı" width="123" data-sticky-width="82" data-sticky-height="40" data-sticky-top="84" src="/logo.jpg">
                             </a>
                         </div>
                         <div class="header-nav header-nav-links justify-content-end pe-lg-4 me-lg-3">
                             <div class="header-nav-main header-nav-main-arrows header-nav-main-dropdown-no-borders header-nav-main-effect-3 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
-                                        <li><a href="{{ route('home')}}" class="nav-link active current-page-active">Anasayfa</a></li>
-                                        <li><a href="{{ route('corporatedetail', 'hakkimizda')}}" class="nav-link">Hakkımızda</a></li>
+                                        <li><a href="{{ route('home')}}" class="nav-link active current-page-active" title="Anasayfa">Anasayfa</a></li>
+                                        <li><a href="{{ route('corporatedetail', 'hakkimizda')}}" class="nav-link" title="HBK Kepenk">Hakkımızda</a></li>
                                         <li class="dropdown">
                                             <a href="#" class="nav-link dropdown-toggle">Hizmetlerimiz<i class="fas fa-chevron-down"></i></a>
                                             <ul class="dropdown-menu">
@@ -62,10 +62,10 @@
                                                
                                             </ul>
                                         </li>
-                                        <li><a href="demo-auto-services-products.html" class="nav-link">Ürünlerimiz</a></li>
-                                        <li><a href="demo-auto-services-blog.html" class="nav-link">Blog</a></li>
-                                        <li><a href="demo-auto-services-appointment.html" class="nav-link">Referanslar</a></li>
-                                        <li><a href="{{ route('contactus')}}" class="nav-link">İletişim</a></li>
+                                        <li><a href="{{ route('product')}}" class="nav-link" title="HBK Ürünlerimiz">Ürünlerimiz</a></li>
+                                        <li><a href="{{ route('blog')}}" class="nav-link" title="Blog">Blog</a></li>
+                                        <li><a href="{{ route('reference')}}" class="nav-link" title="Referans Çalışmalarımız">Referanslar</a></li>
+                                        <li><a href="{{ route('contactus')}}" class="nav-link" title="Bize Ulaşın">İletişim</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -78,7 +78,7 @@
                                 <div class="header-extra-info-text line-height-2">
                                     <span class="text-1 font-weight-semibold text-color-default">7/24 Teknik Destek</span>
                                     <strong class="text-4">
-                                        <a href="tel:{{ config('settings.telefon1')}}" class="text-color-hover-primary text-decoration-none">
+                                        <a title="7/24 Teknik Destek Hattı" href="tel:{{ config('settings.telefon1')}}" class="text-color-hover-primary text-decoration-none">
                                             {{ config('settings.telefon1')}}
                                         </a>
                                     </strong>

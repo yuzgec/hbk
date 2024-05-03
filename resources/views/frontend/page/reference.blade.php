@@ -1,22 +1,21 @@
 @extends('frontend.layout.app')
 @section('content')
-
-    <section class="page-header page-header-modern bg-color-quaternary page-header-md custom-page-header">
-        <div class="container">
-            <div class="row mt-3">
-                <div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-                    <h1>- REFERANSLARIMIZ</h1>
-                    <span class="d-block text-4">İş Kazası Avukatı </span>
-                </div>
-                <div class="col-md-4 order-1 order-md-2 align-self-center">
-                    <ul class="breadcrumb d-block text-md-end breadcrumb-light">
-                        <li><a href="{{ route('home') }}">Anasayfa</a></li>
-                        <li class="active">REFERANSLARIMIZ</li>
-                    </ul>
-                </div>
+<section class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url(img/page-header/page-header-services.jpg);">
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-md-12 align-self-center p-static order-2 text-center">
+                <h1 class="text-10">Referans İşler ve Markalar</strong></h1>
+                <span class="sub-title">Kepenk Tamiri ve Montajı</span>
+            </div>
+            <div class="col-md-12 align-self-center order-1">
+                <ul class="breadcrumb breadcrumb-light d-block text-center">
+                    <li><a href="{{ route('home')}}">Anasayfa</a></li>
+                    <li class="active">Referanslarımız</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <div class="container container-fluid">
         <div class="row">
