@@ -1,6 +1,6 @@
-<div class="card bg-primary border-0 border-radius-0 custom-box-shadow-1" id="form">
+<div class="card border-1 border-radius-1 custom-box-shadow-1" id="form">
     <div class="card-body">
-        <h3 class="text-transform-none text-color-light font-weight-bold mb-5">HIZLI İLETİŞİM FORMU</h3>
+        <h4 class="text-transform-none text-color-dark font-weight-bold mb-3">HIZLI İLETİŞİM FORMU</h4>
         <form class="contact-form custom-form-style-1 form-errors-light" action="{{ route('form') }}" method="POST">
             @csrf
 
@@ -32,9 +32,26 @@
             </div>
             <div class="row">
                 <div class="form-group col text-lg-end mb-0">
-                    <button type="submit" class="btn custom-btn-primary-darken font-weight-bold btn-px-5 btn-py-3 text-white">MESAJI GÖNDER</button>
+                    <button type="submit" class="btn btn-primary font-weight-bold btn-px-5 btn-py-3 text-white">MESAJI GÖNDER</button>
                 </div>
             </div>
         </form>
+    </div>
+</div>
+
+<div class="card border-1 bg-color-grey mt-3">
+    <div class="card-body">
+        <div class="text-center mb-2">  
+            <i class="icon-check icons text-color-primary text-14 "></i>
+        </div>
+        <p class="card-text">Unutmayın, otomatik kepenklerinizin arızalarını ihmal etmeyin. HBK Kepenk'e ulaşarak sorunu en kısa sürede ve en güvenilir şekilde çözüme kavuşturun.</p>
+        <div class="header-extra-info-text line-height-2">
+            <span class="text-3 font-weight-semibold text-color-default">7/24 Teknik Destek</span>
+            <div class="text-5">
+                <a title="7/24 Teknik Destek Hattı" href="tel:{{ config('settings.telefon1')}}" class="text-color-hover-primary text-decoration-none font-weight-bold">
+                    {{ config('settings.telefon1')}}
+                </a>
+            </div>
+        </div>
     </div>
 </div>

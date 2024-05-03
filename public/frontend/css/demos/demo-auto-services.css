@@ -434,9 +434,9 @@ body {
 .custom-form-style-1 .form-control {
 		border: 0;
 		background: #f4f4f4;
-		border-radius: 35px;
+		border-radius: 25px;
 		height: auto;
-		padding: 20px 25px;
+		padding: 10px 15px;
 }
 
 /*

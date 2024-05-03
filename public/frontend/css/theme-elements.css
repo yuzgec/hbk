@@ -3126,8 +3126,7 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 }
 
 .card-body {
-	padding: 32px;
-	padding: 2rem;
+	padding: 1rem;
 	position: relative;
 	z-index: 1;
 }

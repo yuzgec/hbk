@@ -22,14 +22,36 @@
 
 <div class="container">
     <div class="row pb-4">
-        <div class="col-lg-12 col-12 mb-5 mb-lg-0 appear-animation animated fadeInUpShorterPlus appear-animation-visible" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200" style="animation-delay: 200ms;">
-            <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4 text-center" >{{ $Detail->title }}</h2>
+        <div class="col-md-9 col-12 mb-5 mb-lg-0 appear-animation animated fadeInUpShorterPlus appear-animation-visible" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200" style="animation-delay: 200ms;">
+            <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4">{{ $Detail->title }}</h2>
             @if($Detail->getFirstMediaUrl('page'))
                 <img src="{{ $Detail->getFirstMediaUrl('page') }}" class="img-fluid mb-3" alt="{{ $Detail->title }}">
             @endif
             {!!  $Detail->desc !!}
         </div>
-       
+        <div class="col-lg-3 position-relative">
+            <aside class="sidebar">
+                <div class="card border-1 bg-color-grey mt-3 mb-2">
+                    <div class="card-body">
+                        <h4>HİZMETLERİMİZ</h4>
+
+                        <ul class="list list-icons list-primary list-borders">
+                            @php $i = 0; @endphp
+
+                            @foreach ($Service as $item)
+                                    <li class="appear-animation animated fadeInUp appear-animation-visible" 
+                                    data-appear-animation="fadeInUp" data-appear-animation-delay="{{ $i += 100}}" 
+                                    style="animation-delay:{{ $i += 100}}ms;"><i class="fas fa-check"></i>
+                                        {{ $item->title}}
+                                    </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+
+                @include('frontend.layout.form')
+            </aside>
+        </div>
     </div>
 </div>
 

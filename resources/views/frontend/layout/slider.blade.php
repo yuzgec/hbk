@@ -19,7 +19,7 @@
 
 <div class="owl-carousel-wrapper position-relative z-index-1 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="500" style="margin-top: -222px; height: 470px;">
     <div class="owl-carousel owl-theme dots-horizontal-center custom-dots-style-1 dots-dark mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 2}, '992': {'items': 3}, '1200': {'items': 4}, '1440': {'items': 5}}, 'margin': 20, 'stagePadding': 20, 'loop': true, 'nav': false, 'dots': true, 'autoplay': true, 'autoplayTimeout': 7000}">
-        @foreach($Service as $item)
+        @foreach($Service->shuffle()->take(10) as $item)
         <div class="py-3">
             <a href="{{ route('servicedetail', $item->slug)}}" title="İstanbul {{ $item->title}}" class="text-decoration-none">
                 <div class="card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
