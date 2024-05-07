@@ -29,7 +29,7 @@
                                         <img src="{{ (!$item->getFirstMediaUrl('page')) ? '/resimyok.jpg' : $item->getFirstMediaUrl('page', 'thumb') }}" class="img-fluid" alt="{{ $item->title }}">
                                     </a>
                                     <p class="text-uppercase text-1 mb-3 pt-1 text-color-default">
-                                        <time>{{ $item->created_at->diffForHumans()  }}</time> <span class="opacity-3 d-inline-block px-2">|</span> kazagecirdim</p>
+                                        <time>{{ $item->created_at->diffForHumans()  }}</time> <span class="opacity-3 d-inline-block px-2">|</span> kepenktamir</p>
                                     <div class="card-body p-0">
                                         <h4 class="card-title mb-3 text-5 font-weight-bold">
                                             <a href="{{ route('blogdetail' , $item->slug)}}" title="{{ $item->title }}">{{ $item->title }}</a>
