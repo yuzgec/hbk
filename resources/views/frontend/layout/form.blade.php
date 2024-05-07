@@ -32,7 +32,7 @@
             </div>
             <div class="row">
                 <div class="form-group col text-lg-end mb-0">
-                    <button type="submit" class="btn btn-primary font-weight-bold btn-px-5 btn-py-3 text-white">MESAJI GÖNDER</button>
+                    <button type="submit" class="btn btn-primary font-weight-bold btn-sm text-white">MESAJI GÖNDER</button>
                 </div>
             </div>
         </form>

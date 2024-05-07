@@ -25,7 +25,7 @@
         <div class="col-md-9 col-12 mb-5 mb-lg-0 appear-animation animated fadeInUpShorterPlus appear-animation-visible" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200" style="animation-delay: 200ms;">
             <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4">{{ $Detail->title }}</h2>
             @if($Detail->getFirstMediaUrl('page'))
-                <img src="{{ $Detail->getFirstMediaUrl('page') }}" class="img-fluid mb-3" alt="{{ $Detail->title }}">
+                <img src="{{ $Detail->getFirstMediaUrl('page') }}" class="img-fluid mb-3" alt="İstanbul {{ $Detail->title }}">
             @endif
             {!!  $Detail->desc !!}
         </div>
@@ -41,8 +41,11 @@
                             @foreach ($Service as $item)
                                     <li class="appear-animation animated fadeInUp appear-animation-visible" 
                                     data-appear-animation="fadeInUp" data-appear-animation-delay="{{ $i += 100}}" 
-                                    style="animation-delay:{{ $i += 100}}ms;"><i class="fas fa-check"></i>
+                                    style="animation-delay:{{ $i += 100}}ms;">
+                                    <a href="{{ route('servicedetail', $item->slug)}}" title="İstanbul {{ $item->title}}">
+                                        <i class="fas fa-check"></i>
                                         {{ $item->title}}
+                                    </a>    
                                     </li>
                             @endforeach
                         </ul>
