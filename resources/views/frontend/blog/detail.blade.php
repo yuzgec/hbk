@@ -38,7 +38,7 @@
                         <div class="card-body">
                             <h3 class="text-transform-none font-weight-bold pb-3 mb-4">HABERLER</h3>
                             <ul class="custom-list-style-1 list list-unstyled font-weight-bold">
-                                @foreach($Blog->where('service', $Detail->id) as $item)
+                                @foreach($Blog->where('service', $Detail->id)->where('category', 1) as $item)
                                     <li>
                                         <a  class="text-decoration-none text-color-dark text-color-hover-primary" 
                                         href="{{ route('blogdetail' , $item->slug)}}" title="{{ $item->title }}">
