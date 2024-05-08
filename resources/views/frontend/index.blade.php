@@ -92,18 +92,20 @@
                 <div class="d-inline-block custom-divider divider divider-primary divider-small my-3">
                     <hr class="my-0 appear-animation animated customLineProgressAnim appear-animation-visible" data-appear-animation="customLineProgressAnim" data-appear-animation-delay="600" style="animation-delay: 600ms;">
                 </div>
-                <p class="font-weight-light text-3-5 mb-5 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin.</p>
+                <p class="font-weight-light text-3-5 mb-5 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">Unutmayın, otomatik kepenklerinizin arızalarını ihmal etmeyin. HBK Kepenk'e ulaşarak sorunu en kısa sürede ve en güvenilir şekilde çözüme kavuşturun.
+
+                    Unutmayın, otomatik kepenklerinizin arızalarını ihmal etmeyin. HBK Kepenk'e ulaşarak sorunu en kısa sürede ve en güvenilir şekilde çözüme kavuşturun.
+
+                </p>
             </div>
         </div>
         <div class="row row-gutter-sm mb-5 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" style="animation-delay: 750ms;">
             @foreach ($Service as $item)
-                
-           
             <div class="col-6 col-md-4 text-center mb-4 mb-lg-0">
-                <a href="demo-auto-services-services-detail.html" class="text-decoration-none">
+                <a href="{{ route('servicedetail', $item->slug)}}" title="İstanbul {{ $item->title }}" class="text-decoration-none">
                     <div class="custom-thumb-info-style-1 thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten">
                         <div class="thumb-info-wrapper">
-                            <img src="{{ $item->getFirstMediaUrl('thumb') }}" class="img-fluid" alt="İstanbul {{ $item->title }}">
+                            <img src="{{ $item->getFirstMediaUrl('page', 'thumb') }}" class="img-fluid" alt="İstanbul {{ $item->title }}">
                         </div>
                         <h3 class="text-transform-none font-weight-bold text-5 mt-2 mb-0">{{ $item->title }}</h3>
                     </div>
