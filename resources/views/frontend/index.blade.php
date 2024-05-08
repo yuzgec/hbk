@@ -82,6 +82,41 @@
             </div>
         </div>
     </section>
+
+    <div class="container py-5 my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8 text-center">
+                <div class="overflow-hidden">
+                    <h2 class="font-weight-bold text-color-dark line-height-1 mb-0 appear-animation animated maskUp appear-animation-visible" data-appear-animation="maskUp" data-appear-animation-delay="250" style="animation-delay: 250ms;">İSTANBUK HBK KEPENK <b>HİZMETLERİMİZ</b></h2>
+                </div>
+                <div class="d-inline-block custom-divider divider divider-primary divider-small my-3">
+                    <hr class="my-0 appear-animation animated customLineProgressAnim appear-animation-visible" data-appear-animation="customLineProgressAnim" data-appear-animation-delay="600" style="animation-delay: 600ms;">
+                </div>
+                <p class="font-weight-light text-3-5 mb-5 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin.</p>
+            </div>
+        </div>
+        <div class="row row-gutter-sm mb-5 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" style="animation-delay: 750ms;">
+            @foreach ($Service as $item)
+                
+           
+            <div class="col-6 col-md-4 text-center mb-4 mb-lg-0">
+                <a href="demo-auto-services-services-detail.html" class="text-decoration-none">
+                    <div class="custom-thumb-info-style-1 thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-lighten">
+                        <div class="thumb-info-wrapper">
+                            <img src="{{ $item->getFirstMediaUrl('thumb') }}" class="img-fluid" alt="İstanbul {{ $item->title }}">
+                        </div>
+                        <h3 class="text-transform-none font-weight-bold text-5 mt-2 mb-0">{{ $item->title }}</h3>
+                    </div>
+                </a>
+            </div>
+            @endforeach
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a href="{{ route('contactus') }}" class="btn btn-primary custom-btn-border-radius font-weight-bold text-3 btn-px-5 btn-py-3 appear-animation animated fadeInUpShorterPlus appear-animation-visible" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850" style="animation-delay: 850ms;">İLETİŞİME GEÇ</a>
+            </div>
+        </div>
+    </div>
 @endsection
 
 
