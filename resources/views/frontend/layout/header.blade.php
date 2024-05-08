@@ -32,7 +32,7 @@
                                 <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                 <li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                             </ul>
-                            <a href="demo-law-firm-2-contact.html" class="btn btn-primary btn-px-4 py-3 font-weight-bold text-2 rounded-0 ms-lg-4">TEKLİF OLUŞTUR</a>
+                            <a href="{{ route('contactus')}}" class="btn btn-primary btn-px-4 py-3 font-weight-bold text-2 rounded-0 ms-lg-4">TEKLİF OLUŞTUR</a>
                         </div>
                     </div>
                 </div>
