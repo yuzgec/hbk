@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row mt-2">
                 <div class="col-md-12 align-self-center p-static order-2 text-center">
-                    <h1 class="text-10">İstanbul {{ $Detail->title }}</strong></h1>
+                    <h1 class="text-10">{{ $Detail->title }}</strong></h1>
                     <span class="sub-title">Kepenk Tamiri ve Montajı</span>
                 </div>
                 <div class="col-md-12 align-self-center order-1">
@@ -22,7 +22,7 @@
     <div class="container">
         <div class="row pb-4">
             <div class="col-lg-8 col-12 mb-5 mb-lg-0 appear-animation animated fadeInUpShorterPlus appear-animation-visible" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200" style="animation-delay: 200ms;">
-                <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4"><em>{{ $Detail->title }}</em></h2>
+                <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4">{{ $Detail->title }}</h2>
 
                 @if($Detail->getFirstMediaUrl('page'))
                     <img src="{{ $Detail->getFirstMediaUrl('page') }}" class="img-fluid mb-3" alt="{{ $Detail->title }} - İSTANBUL HBK KEPENK SİSTEMLERİ">
@@ -32,7 +32,7 @@
             </div>
             <div class="col-lg-4 col-12 position-relative">
                 <aside class="sidebar" data-plugin-sticky="" data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 120}}">
-                
+            
 
                     <div class="card border-0 border-radius-0 custom-box-shadow-1 mb-3">
                         <div class="card-body">

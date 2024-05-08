@@ -26,9 +26,7 @@
                     </div>
                     <div class="feature-box-info line-height-1 ps-2">
                         <span class="d-block font-weight-bold text-color-light text-5 pb-1 mb-1">Telefon</span>
-                        <a href="tel:1234567890" class="text-color-light text-4 line-height-7 text-decoration-none">+123 4567 890</a>
-                        <span class="text-color-light text-4 px-2">/</span>
-                        <a href="tel:1234567890" class="text-color-light text-4 line-height-7 text-decoration-none">+123 4567 890</a>
+                        <a href="tel:{{ config('settings.telefon2')}}" class="text-color-light text-4 line-height-7 text-decoration-none">{{ config('settings.telefon2')}}</a>
                     </div>
                 </div>
             </div>
@@ -60,9 +58,7 @@
                     </div>
                     <div class="feature-box-info line-height-1 ps-xl-3">
                         <span class="d-block font-weight-bold text-color-light text-5 pb-1 mb-1">24/7 Servis</span>
-                        <a href="tel:1234567890" class="text-color-light text-4 line-height-7 text-decoration-none">+123 4567 890</a>
-                        <span class="text-color-light text-4 px-2">/</span>
-                        <a href="tel:1234567890" class="text-color-light text-4 line-height-7 text-decoration-none">+123 4567 890</a>
+                        <a href="tel:{{ config('settings.telefon1')}}" class="text-color-light text-4 line-height-7 text-decoration-none">{{ config('settings.telefon1')}}</a>
                     </div>
                 </div>
             </div>
@@ -115,9 +111,10 @@
             <div class="col-md-3 col-12">
                 <h5 class="text-transform-none font-weight-bold text-color-light text-4-5 mb-4">Blog</h5>
                 <ul class="list list-unstyled list-inline custom-list-style-1 mb-0">
-                    <li>Mon - Fri: 8:30 am to 5:00 pm</li>
-                    <li>Saturday: 9:30 am to 1:00 pm</li>
-                    <li>Sunday: Closed</li>
+                    @foreach ($Blog->where('category', 2) as $item)
+                        <li lass="mb-0"><a href="{{ route('blogdetail', $item->slug)}}" title="{{ $item->title}}">{{ $item->title}}</a></li>
+                    @endforeach
+                 
                 </ul>
             </div>
         </div>
