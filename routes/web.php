@@ -10,7 +10,7 @@ Route::redirect('/kapenk-motorlar.html', '/hizmet/otomatik-kepenk-tamiri', 301);
 Route::redirect('/hizmetlerimiz.php', '/', 301);
 Route::redirect('/iletisim.php', '/iletisim', 301);
 Route::redirect('/hakkimizda.php', '/sayfa/hakkimizda', 301);
-Route::redirect('/news.php', '/blog', 301);
+Route::redirect('/news.php', '/makaleler', 301);
 Route::redirect('/hakkimizda.php', '/sayfa/hakkimizda', 301);
 
 Route::redirect('/beykoz-kepenk-tamiri.htm', '/hizmetbolgesi/beykoz-otomatik-kepenk-tamiri', 301);
@@ -20,6 +20,7 @@ Route::redirect('/kozyatagi-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri
 Route::redirect('/eminonu-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
 Route::redirect('/samandira-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
 Route::redirect('/sile-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
+Route::redirect('/sisli-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
 Route::redirect('/fatih-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
 Route::redirect('/atasehir-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
 Route::redirect('/buyukcekmece-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);

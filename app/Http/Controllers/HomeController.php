@@ -33,12 +33,6 @@ class HomeController extends Controller
         return view('frontend.page.faq');
     }
 
-    public function team(){
-
-        SEOMeta::setTitle('Ekibimiz | İstanbul HBK Kepenk Servisi | Kepenk Tamiri');
-
-        return view('frontend.page.team');
-    }
 
     public function contact(){
 
@@ -109,7 +103,7 @@ class HomeController extends Controller
         $New->save();
 
         Mail::send("mail.form",compact('New'),function ($message) use($New) {
-            $message->to('olcayy@gmail.com')->subject($New->name.' - Site Bilgi Formu');
+            $message->to('hbkkepenk@gmail.com')->subject($New->name.' - Site Bilgi Formu');
         });
 
         return redirect()->route('home');

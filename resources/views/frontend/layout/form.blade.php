@@ -3,7 +3,7 @@
         <h4 class="text-transform-none text-color-dark font-weight-bold mb-3">HIZLI İLETİŞİM FORMU</h4>
         <form class="contact-form custom-form-style-1 form-errors-light" action="{{ route('form') }}" method="POST">
             @csrf
-
+            <input type="hidden" name="subject" value="{{ ($Detail->title) ? $Detail->title : null }}">
             <div class="row">
                 <div class="form-group col mb-3">
                     <input type="text" value="{{ old('name') }}" class="form-control @if($errors->has('name')) is-invalid @endif" name="name" placeholder="Adınız Soyadınız *">

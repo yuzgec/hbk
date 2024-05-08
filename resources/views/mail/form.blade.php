@@ -131,7 +131,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <img src="https://www.drturancetin.com/uzman-dr-turan-cetin.png" alt="Dr. Turan Çetin" style="margin-bottom: 10px;width: 50%;">
+                        <img src="https://www.istanbulkepenktamir.com/logo.png" alt="HBK" style="margin-bottom: 10px;width: 50%;">
                     </td>
                 </tr>
 
@@ -152,12 +152,7 @@
                     <td style="line-height: 49px;text-align: right;padding-right: 28px;font-size: 13px;color: #000000;text-align:right;border-left: unset;"
                         colspan="3" class="price"><b>{{ $New->name }}</b></td>
                 </tr>
-                <tr>
-                    <td style="line-height: 49px;font-size: 13px;color: #000000;padding-left: 20px;text-align:left;border-right: unset;"
-                        colspan="2">Email :</td>
-                    <td style="line-height: 49px;text-align: right;padding-right: 28px;font-size: 13px;color: #000000;text-align:right;border-left: unset;"
-                        colspan="3" class="price"><b>{{ $New->email }}</b></td>
-                </tr>
+  
                 <tr>
                     <td colspan="2"
                         style="line-height: 49px;font-family: Arial;font-size: 13px;color: #000000;padding-left: 20px;text-align:left;border-right: unset;">
