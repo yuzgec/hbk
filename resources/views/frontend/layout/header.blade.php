@@ -62,7 +62,6 @@
                                                
                                             </ul>
                                         </li>
-                                        <li><a href="{{ route('product')}}" class="nav-link" title="HBK Ürünlerimiz">Ürünlerimiz</a></li>
                                         <li><a href="{{ route('blog')}}" class="nav-link" title="Blog">Blog</a></li>
                                         <li><a href="{{ route('reference')}}" class="nav-link" title="Referans Çalışmalarımız">Referanslar</a></li>
                                         <li><a href="{{ route('contactus')}}" class="nav-link" title="Bize Ulaşın">İletişim</a></li>
