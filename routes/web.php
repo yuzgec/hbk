@@ -6,6 +6,9 @@ use App\Models\Service;
 use App\Models\Blog;
 
 Route::redirect('/kepenk-tamiri.html', '/hizmet/otomatik-kepenk-tamiri', 301);
+Route::redirect('/hizmetlerimiz.php', '/', 301);
+Route::redirect('/iletisim.php', '/iletisim', 301);
+Route::redirect('/hakkimizda.php', '/sayfa/hakkimizda', 301);
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
