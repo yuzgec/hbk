@@ -22,7 +22,7 @@ return [
          */
 
         'webmaster_tags' => [
-            'google'    => null,
+            'google'    => 'XaIHCz7qoHJMaDRI5EJGSzd5EtXCj-UUi8f3OW-yEnY',
             'bing'      => null,
             'alexa'     => null,
             'pinterest' => null,
