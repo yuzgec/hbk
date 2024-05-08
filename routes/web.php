@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Service;
 use App\Models\Blog;
 
+Route::redirect('/kepenk-tamiri.html', '/hizmet/otomatik-kepenk-tamiri', 301);
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
