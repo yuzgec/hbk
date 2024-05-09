@@ -85,18 +85,14 @@
 
     <div class="container py-5 my-5">
         <div class="row justify-content-center">
-            <div class="col-lg-9 col-xl-8 text-center">
+            <div class="col-12 text-center">
                 <div class="overflow-hidden">
                     <h2 class="font-weight-bold text-color-dark line-height-1 mb-0 appear-animation animated maskUp appear-animation-visible" data-appear-animation="maskUp" data-appear-animation-delay="250" style="animation-delay: 250ms;">İSTANBUK HBK KEPENK <b>HİZMETLERİMİZ</b></h2>
                 </div>
                 <div class="d-inline-block custom-divider divider divider-primary divider-small my-3">
                     <hr class="my-0 appear-animation animated customLineProgressAnim appear-animation-visible" data-appear-animation="customLineProgressAnim" data-appear-animation-delay="600" style="animation-delay: 600ms;">
                 </div>
-                <p class="font-weight-light text-3-5 mb-5 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">Unutmayın, otomatik kepenklerinizin arızalarını ihmal etmeyin. HBK Kepenk'e ulaşarak sorunu en kısa sürede ve en güvenilir şekilde çözüme kavuşturun.
-
-                    Unutmayın, otomatik kepenklerinizin arızalarını ihmal etmeyin. HBK Kepenk'e ulaşarak sorunu en kısa sürede ve en güvenilir şekilde çözüme kavuşturun.
-
-                </p>
+                <p class="font-weight-light text-3-5 mb-5 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" style="animation-delay: 500ms;">Unutmayın, otomatik kepenklerinizin arızalarını ihmal etmeyin. HBK Kepenk'e ulaşarak sorunu en kısa sürede ve en güvenilir şekilde çözüme kavuşturun.</p>
             </div>
         </div>
         <div class="row row-gutter-sm mb-5 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" style="animation-delay: 750ms;">
