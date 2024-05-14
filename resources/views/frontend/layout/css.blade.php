@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="/frontend/vendor/simple-line-icons/css/simple-line-icons.min.css?ver=2">
 <link rel="stylesheet" href="/frontend/vendor/owl.carousel/assets/owl.carousel.min.css?ver=2">
 <link rel="stylesheet" href="/frontend/vendor/owl.carousel/assets/owl.theme.default.min.css?ver=2">
-<link rel="stylesheet" href="/frontend/vendor/magnific-popup/magnific-popup.min.css?ver=2">
-<link rel="stylesheet" href="/frontend/css/theme.css?ver=3">
+{{-- <link rel="stylesheet" href="/frontend/vendor/magnific-popup/magnific-popup.min.css?ver=2">
+ --}}<link rel="stylesheet" href="/frontend/css/theme.css?ver=3">
 <link rel="stylesheet" href="/frontend/css/theme-elements.css?ver=3">
 <link rel="stylesheet" href="/frontend/css/demos/demo-auto-services.css?ver=3">
 <link id="skinCSS" rel="stylesheet" href="/frontend/css/color.css?ver=2">
