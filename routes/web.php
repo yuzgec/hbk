@@ -5,80 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Service;
 use App\Models\Blog;
 
-Route::redirect('/kepenk-tamiri.html', '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/kapenk-motorlar.html', '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/hizmetlerimiz.php', '/', 301);
-Route::redirect('/iletisim.php', '/iletisim', 301);
-Route::redirect('/hakkimizda.php', '/sayfa/hakkimizda', 301);
-Route::redirect('/news.php', '/makaleler', 301);
-Route::redirect('/hakkimizda.php', '/sayfa/hakkimizda', 301);
 
-Route::redirect('/beykoz-kepenk-tamiri.htm', '/hizmetbolgesi/beykoz-otomatik-kepenk-tamiri', 301);
-Route::redirect('/acibadem-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/goztepe-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/kozyatagi-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/eminonu-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/samandira-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/sile-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/sisli-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/fatih-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/atasehir-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/buyukcekmece-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/bahcelievler-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/taksim-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/eyup-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/maltepe-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/uskudar-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/ikitelli-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/esenler-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/sancaktepe-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/zeytinburnu-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/idealtepe-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/beylikduzu-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/avcilar-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/umraniye-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/cekmekoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/cengelkoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/adalar-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/sultangazi-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/beyoglu-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/silivri-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/bakirkoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/suadiye-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/arnavutkoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/gungoren-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/kurtkoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/etiler-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/ortakoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/mimaroba-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/sariyer-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/kagithane-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/kadikoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/gunesli-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/yesilkoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/atakoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/halkali-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/esenyurt-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/kucukcekmece-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/merter-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/sefakoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/bostanci-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/maslak-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/basaksehir-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/sirinevler-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/tuzla-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/icerenkoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/kartal-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/besiktas-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/sultanbeyli-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/kavacik-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/erenkoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/catalca-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/bayrampasa-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/bagcilar-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/kucukyali-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/nisantasi-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
-Route::redirect('/mecidiyekoy-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
+require __DIR__.'/redirect.php';
+
+
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/iletisim', [HomeController::class, 'contact'])->name('contactus');
@@ -159,6 +89,106 @@ Route::get('/ilceler', function(){
             
             <p>{$item} kepenk tamiri ve bakımı konusunda güvenilir ve kaliteli hizmet almak için bizimle iletişime geçebilirsiniz.</p>
             ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+});  
+
+Route::get('/fotoselli', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 2)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2>{$item} Otomatik Fotoselli Cam Kapı Tamir Servisi</h2>
+
+            <p>HBK Kepenk sizlere hızlı ve garantili olarak otomatik fotoselli cam kapı tamir servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <h3>{$item} Fotoselli Kapı Sistemleri</h3>
+        
+            <p>Fotoselli kapı sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Bu sistemler fotoselli cam kapı, otomatik cam kapı veya fotosel kapı olarak da bilinmektedir. Estetik görünüşü ve kolay kullanımı sayesinde birçok işletme ve firma bu sistemi tercih etmeye başlamış ve böylece tamir, bakım ve onarım hizmetlerine duyulan ihtiyaç artmıştır.</p>
+        
+            <h3>HBK Kepenk: Güvenilir Servis Hizmetleri</h3>
+        
+            <p>Firmamız, 1991 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve apartman girişleri gibi alanlarda kullanılan fotoselli cam kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <h3>Fotoselli Cam Kapı Arızaları Nelerdir?</h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan otomatik kapılar, farklı nedenlerden dolayı arıza verebilmektedir. Fotoselli cam kapılarda sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Radar ve Fotosel Göz Arızaları:</strong> Kapının sensörlerinde meydana gelen sorunlar, kapının düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Kayış Sisteminde Bozulmalar:</strong> Kayış sistemindeki problemler, kapının açılıp kapanmasını zorlaştırabilir.</li>
+                <li><strong>Ana Kart Devresinde Problemler:</strong> Kapının kontrol ünitesinde meydana gelen arızalar, kapının tamamen işlevsiz hale gelmesine neden olabilir.</li>
+                <li><strong>Motor Hareket Mekanizmasında Kısa Devreler:</strong> Motor sistemindeki kısa devreler, kapının hareket mekanizmasını etkileyebilir.</li>
+            </ol>
+        
+            <h2>{$item} HBK Kepenk: Hızlı ve Etkili Servis</h2>
+        
+            <p>İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile fotoselli cam kapı servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3>İletişim</h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+        ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+}); 
+
+Route::get('/seksiyonel', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 6)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2><strong>{$item} Seksiyonel Kapı Tamir Servisi</strong></h2>
+
+            <p>HBK Kepenk sizlere hızlı ve garantili olarak seksiyonel kapı tamir servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <h2><strong>{$item} Seksiyonel Kapı Sistemleri</h2>
+        
+            <p>Seksiyonel kapı sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Bu sistemler, estetik görünüşü ve kolay kullanımı sayesinde birçok işletme ve firma tarafından tercih edilmektedir. Seksiyonel kapılar, özellikle endüstriyel alanlarda ve garajlarda sıkça kullanılmakta olup, tamir, bakım ve onarım hizmetlerine duyulan ihtiyaç da artmıştır.</p>
+        
+            <h2>{$item} Güvenilir Servis Hizmetleri</strong></h2>
+        
+            <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve endüstriyel alanlarda kullanılan seksiyonel kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <h3><strong>Seksiyonel Kapı Arızaları Nelerdir?</strong></h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan seksiyonel kapılar, farklı nedenlerden dolayı arıza verebilmektedir. Seksiyonel kapılarda sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Kapının motorunda meydana gelen problemler, kapının açılmasını ve kapanmasını engelleyebilir.</li>
+                <li><strong>Yay ve Kablo Problemleri:</strong> Yayların veya kabloların kopması, kapının düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Kontrol Paneli Sorunları:</strong> Kapının kontrol panelinde meydana gelen arızalar, kapının işlevselliğini kaybetmesine neden olabilir.</li>
+                <li><strong>Sensör Arızaları:</strong> Kapının güvenlik sensörlerinde meydana gelen problemler, kapının düzgün çalışmasını engelleyebilir.</li>
+            </ol>
+        
+            <h3><strong>{$item} 7/24 Hızlı ve Etkili Servis</strong></h3>
+        
+            <p>{$item} her noktasına kalite sertifikası ve uzman ustalarımız ile seksiyonel kapı servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3>İletişim</h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+        ";
             $Edit->desc = $desc;
             $Edit->save();
         }
