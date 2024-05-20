@@ -21,7 +21,7 @@
 
     <div class="container">
         <div class="row pb-4">
-            <div class="col-md-12 mb-5 mb-lg-0">
+            <div class="col-md-8 mb-5">
                 <h2 class="text-color-dark font-weight-bold text-10 pb-2 mb-4">{{ $Detail->title }}</h2>
 
                 @if($Detail->getFirstMediaUrl('page'))
@@ -30,7 +30,53 @@
 
                 {!!  $Detail->desc !!}
             </div>
-           
+            <div class="col-md-4 position-relative">
+                <aside class="sidebar">
+
+                    @include('frontend.layout.form')
+    
+                    <div class="card border-1 bg-color-grey mt-3 mb-2">
+                        <div class="card-body">
+                            <h4>HİZMETLERİMİZ</h4>
+    
+                            <ul class="list list-icons list-primary list-borders">
+                                @php $i = 0; @endphp
+    
+                                @foreach ($Service as $item)
+                                        <li class="appear-animation animated fadeInUp appear-animation-visible" 
+                                        data-appear-animation="fadeInUp" data-appear-animation-delay="{{ $i += 100}}" 
+                                        style="animation-delay:{{ $i += 100}}ms;">
+                                        <a href="{{ route('servicedetail', $item->slug)}}" title="İstanbul {{ $item->title}}">
+                                            <i class="fas fa-check"></i>
+                                            {{ $item->title}}
+                                        </a>    
+                                        </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+    
+                 
+                </aside>
+            </div>
+        </div>
+       
+      
+    </div>
+
+    <div class="owl-carousel-wrapper position-relative z-index-1">
+        <div class="owl-carousel owl-theme dots-horizontal-center custom-dots-style-1 dots-dark mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 2}, '992': {'items': 3}, '1200': {'items': 4}, '1440': {'items': 7}}, 'margin': 10, 'stagePadding': 20, 'loop': true, 'nav': false, 'dots': true, 'autoplay': true, 'autoplayTimeout': 3000}">
+            @foreach($Blog->where('service', $Detail->service)->where('category',1) as $item)
+                <div class="py-3">
+                    <a href="{{route('servicearea', $item->slug)}}" title="{{$item->title}} - HBK Kepenk" class="text-decoration-none">
+                        <div class="card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
+                            <div class="card-body text-center px-2 py-3">
+                                <h2 class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-3 mb-3">{{ $item->title}}</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            @endforeach
         </div>
     </div>
 @endsection
