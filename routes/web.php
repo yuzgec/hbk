@@ -342,7 +342,7 @@ Route::get('/doner', function(){
 
 Route::get('/garaj', function(){
     $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
-    $a = Blog::where('service', 16)->get();
+    $a = Blog::where('service', 4)->get();
     
     if (count($istanbul) !== count($a)) {
         throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
