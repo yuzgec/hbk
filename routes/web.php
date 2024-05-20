@@ -196,7 +196,6 @@ Route::get('/seksiyonel', function(){
     
 });  
 
-
 Route::get('/panjur', function(){
     $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
     $a = Blog::where('service', 14)->get();
@@ -240,6 +239,100 @@ Route::get('/panjur', function(){
         
             <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
          ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+}); 
+
+Route::get('/doner', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 16)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2><strong>{$item} Döner Kapı Montaj ve Tamiri</strong></h2>
+
+            <p>HBK Kepenk sizlere hızlı ve garantili olarak döner kapı montaj ve tamir servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <h2>{$item} Döner Kapı Sistemleri</h2>
+        
+            <p>Döner kapı sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Estetik görünüşü ve enerji tasarrufu sağlaması sayesinde birçok işletme ve firma bu sistemi tercih etmektedir. Bu durum, döner kapı montaj, bakım ve onarım hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
+        
+            <h2>7/24 Güvenilir Servis Hizmetleri</h2>
+        
+            <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan döner kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <h3>Döner Kapı Arızaları Nelerdir?</h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan döner kapılar, farklı nedenlerden dolayı arıza verebilmektedir. Döner kapılarda sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Kapının motorunda meydana gelen problemler, kapının açılmasını ve kapanmasını engelleyebilir.</li>
+                <li><strong>Sensör ve Radar Problemleri:</strong> Kapının sensörlerinde meydana gelen arızalar, kapının düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Kontrol Paneli Sorunları:</strong> Kapının kontrol panelinde meydana gelen arızalar, kapının işlevselliğini kaybetmesine neden olabilir.</li>
+                <li><strong>Mekanizma ve Parça Problemleri:</strong> Kapının mekanik parçalarında meydana gelen arızalar, kapının düzgün hareket etmesini engelleyebilir.</li>
+            </ol>
+        
+            <h2>İstanbul'un Her Noktasında Hizmet</h2>
+        
+            <p>HBK Kepenk olarak, İstanbul’un tüm ilçelerinde döner kapı montaj ve tamir hizmeti sağlamaktayız. Hizmet verdiğimiz ilçeler şunlardır:</p>
+        
+            <ul>
+                <li>Adalar</li>
+                <li>Arnavutköy</li>
+                <li>Ataşehir</li>
+                <li>Avcılar</li>
+                <li>Bağcılar</li>
+                <li>Bahçelievler</li>
+                <li>Bakırköy</li>
+                <li>Başakşehir</li>
+                <li>Bayrampaşa</li>
+                <li>Beşiktaş</li>
+                <li>Beykoz</li>
+                <li>Beylikdüzü</li>
+                <li>Beyoğlu</li>
+                <li>Büyükçekmece</li>
+                <li>Çatalca</li>
+                <li>Çekmeköy</li>
+                <li>Esenler</li>
+                <li>Esenyurt</li>
+                <li>Eyüpsultan</li>
+                <li>Fatih</li>
+                <li>Gaziosmanpaşa</li>
+                <li>Güngören</li>
+                <li>Kadıköy</li>
+                <li>Kağıthane</li>
+                <li>Kartal</li>
+                <li>Küçükçekmece</li>
+                <li>Maltepe</li>
+                <li>Pendik</li>
+                <li>Sancaktepe</li>
+                <li>Sarıyer</li>
+                <li>Silivri</li>
+                <li>Sultanbeyli</li>
+                <li>Sultangazi</li>
+                <li>Şile</li>
+                <li>Şişli</li>
+                <li>Tuzla</li>
+                <li>Ümraniye</li>
+                <li>Üsküdar</li>
+                <li>Zeytinburnu</li>
+            </ul>
+        
+            <p>İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile döner kapı montaj ve servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3>İletişim</h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+        ";
             $Edit->desc = $desc;
             $Edit->save();
         }
