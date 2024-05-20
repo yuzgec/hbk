@@ -388,6 +388,57 @@ Route::get('/garaj', function(){
         }
     }
     
+}); 
+
+
+Route::get('/endustri', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 3)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2><strong>{$item} Endüstriyel Kapı Tamiri</strong></h2>
+
+            <p>HBK Kepenk sizlere hızlı ve garantili olarak endüstriyel kapı tamir ve servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <h2>Endüstriyel Kapı Sistemleri</h2>
+        
+            <p>Endüstriyel kapı sistemleri, büyük ölçekli işletmelerde, fabrikalarda ve depolarda yaygın olarak kullanılmaktadır. Yüksek güvenlik, dayanıklılık ve kullanım kolaylığı sağlayan bu sistemler, endüstriyel alanlarda verimliliği artırmaktadır. Bu nedenle, endüstriyel kapıların montaj, bakım ve onarım hizmetlerine duyulan ihtiyaç artmaktadır.</p>
+        
+            <h2>HBK Kepenk: Güvenilir Servis Hizmetleri</h2>
+        
+            <p>Firmamız, 1989 yılından beridir {$item} ve çevresindeki endüstriyel alanlarda kullanılan kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <h3>Endüstriyel Kapı Arızaları Nelerdir?</h3>
+        
+            <p>Günümüzde birçok endüstriyel alanda kullanılan kapılar, farklı nedenlerden dolayı arıza verebilmektedir. Endüstriyel kapılarda sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Kapının motorunda meydana gelen problemler, kapının açılmasını ve kapanmasını engelleyebilir.</li>
+                <li><strong>Sensör ve Kontrol Paneli Sorunları:</strong> Kapının sensörlerinde veya kontrol panelinde meydana gelen arızalar, kapının düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Mekanik Parça Problemleri:</strong> Kapının mekanik parçalarında meydana gelen arızalar, kapının işlevselliğini etkileyebilir.</li>
+                <li><strong>Yay ve Kablo Problemleri:</strong> Yayların veya kabloların kopması, kapının düzgün çalışmasını engelleyebilir.</li>
+            </ol>
+        
+            <h2>İstanbul'un Her Noktasında Hizmet</h2>
+        
+            <p>İstanbul Kepenk Tamiri olarak, {$item}  tüm bölgelerinde endüstriyel kapı tamir ve bakım hizmeti sağlamaktayız. İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile endüstriyel kapı servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3>İletişim</h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+        ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
 });  
 
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {
