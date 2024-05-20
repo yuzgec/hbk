@@ -196,6 +196,57 @@ Route::get('/seksiyonel', function(){
     
 });  
 
+
+Route::get('/panjur', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 14)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2><strong>{$item} Panjur Tamir ve Servisi</strong></h2>
+
+            <p>HBK Kepenk sizlere hızlı ve garantili olarak panjur tamir ve servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <h2><strong>{$item} Panjur Sistemleri</strong></h2>
+        
+            <p>Panjur sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Estetik görünüşü, güvenliği artırması ve enerji tasarrufu sağlaması nedeniyle birçok ev ve iş yeri bu sistemi tercih etmektedir. Bu durum, tamir, bakım ve onarım hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
+        
+            <h3><strong>7/24 Güvenilir Servis Hizmetleri</strong></h3>
+        
+            <p>Firmamız, 1991 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan panjur sistemleri için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <h3><strong>Panjur Arızaları Nelerdir?</strong></h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan panjurlar, farklı nedenlerden dolayı arıza verebilmektedir. Panjur sistemlerinde sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Panjurun motorunda meydana gelen problemler, panjurun açılıp kapanmasını engelleyebilir.</li>
+                <li><strong>Kablo ve Mekanik Parça Sorunları:</strong> Kabloların veya mekanik parçaların kopması veya bozulması, panjurun düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Kontrol Ünitesi Arızaları:</strong> Panjurun kontrol ünitesinde meydana gelen arızalar, panjurun işlevselliğini kaybetmesine neden olabilir.</li>
+                <li><strong>Ray ve Mekanizma Problemleri:</strong> Panjurun ray ve mekanizmalarında meydana gelen sorunlar, panjurun düzgün hareket etmesini engelleyebilir.</li>
+            </ol>
+        
+            <h3><strong>7/24 Acil Hızlı ve Etkili Servis</strong></h2>
+        
+            <p>İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile panjur servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3>İletişim</h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+         ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+});  
+
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {
     Route::get('/', 'DashboardController@index')->name('go');
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
