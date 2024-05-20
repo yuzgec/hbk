@@ -539,6 +539,56 @@ Route::get('/bahce', function(){
         }
     }
     
+}); 
+
+Route::get('/bariyer', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 5)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2><strong>{$item} Bariyer Tamir Servisi</strong></h2>
+
+            <p>HBK Kepenk sizlere hızlı ve garantili olarak bariyer tamir servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <h2>{$item} Bariyer Sistemleri</h2>
+        
+            <p>Bariyer sistemleri, güvenlik ve kontrol açısından oldukça önemli olup, günümüzde otoparklar, site girişleri ve iş yerleri gibi birçok alanda yaygın olarak kullanılmaktadır. Bariyerlerin düzenli olarak bakım ve onarım gerektirmesi nedeniyle bu hizmetlere duyulan ihtiyaç artmaktadır.</p>
+        
+            <h2>7/24 Acil Güvenilir Servis Hizmetleri</h2>
+        
+            <p>Firmamız, 1989 yılından beridir {$item} ve çevresindeki otoparklar, site girişleri ve diğer alanlarda kullanılan bariyer sistemleri için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <h3>Bariyer Arızaları Nelerdir?</h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan bariyer sistemleri, farklı nedenlerden dolayı arıza verebilmektedir. Bariyer sistemlerinde sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Bariyerin motorunda meydana gelen problemler, bariyerin açılmasını ve kapanmasını engelleyebilir.</li>
+                <li><strong>Kontrol Paneli ve Sensör Problemleri:</strong> Bariyerin kontrol panelinde veya sensörlerinde meydana gelen arızalar, bariyerin düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Mekanik Parça Sorunları:</strong> Bariyerin mekanik parçalarında meydana gelen arızalar, bariyerin işlevselliğini etkileyebilir.</li>
+                <li><strong>Elektrik ve Kablo Arızaları:</strong> Elektrik ve kablolarda meydana gelen sorunlar, bariyerin düzgün çalışmasını engelleyebilir.</li>
+            </ol>
+        
+            <h2>İstanbul'un Her Noktasında Hizmet</h2>
+        
+            <p>HBK Kepenk olarak, İstanbul’un tüm bölgelerinde bariyer tamir ve bakım hizmeti sağlamaktayız. İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile bariyer servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3>İletişim</h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+         ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
 });  
 
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {
