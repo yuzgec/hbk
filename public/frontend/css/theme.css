@@ -3117,6 +3117,14 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 		left: -60px;
 	}
 
+	.birsatir{
+		display: -webkit-box !important;
+		-webkit-line-clamp: 1 !important;
+		-webkit-box-orient: vertical !important;
+		overflow: hidden !important;
+		text-transform: capitalize !important;
+	}
+
 	.ikisatir{
 		display: -webkit-box !important;
 		-webkit-line-clamp: 2 !important;
