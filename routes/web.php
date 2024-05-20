@@ -118,7 +118,7 @@ Route::get('/fotoselli', function(){
         
             <h3>HBK Kepenk: Güvenilir Servis Hizmetleri</h3>
         
-            <p>Firmamız, 1991 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve apartman girişleri gibi alanlarda kullanılan fotoselli cam kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+            <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve apartman girişleri gibi alanlarda kullanılan fotoselli cam kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
         
             <h3>Fotoselli Cam Kapı Arızaları Nelerdir?</h3>
         
@@ -218,7 +218,7 @@ Route::get('/panjur', function(){
         
             <h3><strong>7/24 Güvenilir Servis Hizmetleri</strong></h3>
         
-            <p>Firmamız, 1991 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan panjur sistemleri için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+            <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan panjur sistemleri için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
         
             <h3><strong>Panjur Arızaları Nelerdir?</strong></h3>
         
@@ -453,7 +453,7 @@ Route::get('/zip', function(){
         $Edit = Blog::find($row->id);
         if ($Edit) {
             $item = $istanbul[$index];
-            $desc = "<h2><strong>{$item} Zip Perde Montajı ve Tamiri<</strong></h2>
+            $desc = "<h2><strong>{$item} Zip Perde Montajı ve Tamiri</strong></h2>
 
             <p>HBK Kepenk sizlere hızlı ve garantili olarak zip perde montaj ve tamir servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
         
@@ -463,7 +463,7 @@ Route::get('/zip', function(){
         
             <h2>HBK Kepenk: Güvenilir Servis Hizmetleri</h2>
         
-            <p>Firmamız, 1991 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan zip perdeler için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+            <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan zip perdeler için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
         
             <h3>Zip Perde Arızaları Nelerdir?</h3>
         
