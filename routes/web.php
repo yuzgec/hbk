@@ -340,6 +340,56 @@ Route::get('/doner', function(){
     
 });  
 
+Route::get('/garaj', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 16)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2><strong>{$item} Garaj Kapısı Tamiri ve Servisi</strong></h2>
+
+            <p>HBK Kepenk sizlere hızlı ve garantili olarak garaj kapısı tamir ve servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <h2>{$item} Garaj Kapısı Sistemleri</h2>
+        
+            <p>Garaj kapısı sistemleri günümüzde oldukça yaygın olarak kullanılmaktadır ve kullanım alanları giderek artmaktadır. Estetik görünüşü, güvenlik sağlaması ve kullanışlılığı sayesinde birçok ev ve iş yeri bu sistemi tercih etmektedir. Bu durum, garaj kapısı montaj, bakım ve onarım hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
+        
+            <h2>7 gün 24 Saat Güvenilir Servis Hizmetleri</h2>
+        
+            <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan garaj kapıları için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <h3>Garaj Kapısı Arızaları Nelerdir?</h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan garaj kapıları, farklı nedenlerden dolayı arıza verebilmektedir. Garaj kapılarında sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Kapının motorunda meydana gelen problemler, kapının açılmasını ve kapanmasını engelleyebilir.</li>
+                <li><strong>Yay ve Kablo Problemleri:</strong> Yayların veya kabloların kopması, kapının düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Kontrol Ünitesi Sorunları:</strong> Kapının kontrol ünitesinde meydana gelen arızalar, kapının işlevselliğini kaybetmesine neden olabilir.</li>
+                <li><strong>Ray ve Mekanizma Problemleri:</strong> Kapının ray ve mekanizmalarında meydana gelen sorunlar, kapının düzgün hareket etmesini engelleyebilir.</li>
+            </ol>
+        
+            <h2>İstanbul'un Her Noktasında Hizmet</h2>
+        
+            <p>HBK Kepenk olarak, İstanbul’un tüm bölgelerinde garaj kapısı montaj ve tamir hizmeti sağlamaktayız. İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile garaj kapısı servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3>İletişim</h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+         ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+});  
+
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {
     Route::get('/', 'DashboardController@index')->name('go');
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
