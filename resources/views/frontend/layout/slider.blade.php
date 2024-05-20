@@ -21,10 +21,10 @@
     <div class="owl-carousel owl-theme dots-horizontal-center custom-dots-style-1 dots-dark mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 2}, '992': {'items': 3}, '1200': {'items': 4}, '1440': {'items': 5}}, 'margin': 20, 'stagePadding': 20, 'loop': true, 'nav': false, 'dots': true, 'autoplay': true, 'autoplayTimeout': 7000}">
         @foreach($Service->shuffle()->take(10) as $item)
         <div class="py-3">
-            <a href="{{ route('servicedetail', $item->slug)}}" title="İstanbul {{ $item->title}}" class="text-decoration-none birsatir">
+            <a href="{{ route('servicedetail', $item->slug)}}" title="İstanbul {{ $item->title}}" class="text-decoration-none">
                 <div class="card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
                     <div class="card-body text-center px-4 py-5">
-                        <h4 class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-3 mb-3">{{ $item->title}}</h4>
+                        <h4 class="card-title alternative-font-4 text-color-dark font-weight-semibold line-height-1 text-3 mb-3 birsatir">{{ $item->title}}</h4>
                         <p class="font-weight-light text-color-dark line-height-7 mb-2 ikisatir">{{ $item->short}}</p>                    
                     </div>
                 </div>

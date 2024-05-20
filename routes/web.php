@@ -638,6 +638,106 @@ Route::get('/pvc', function(){
     <h3>İletişim</h3>
 
     <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+    ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+});  
+
+Route::get('/motorlu', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 8)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2><strong>{$item} Motorlu Kepenk Tamiri</strong></h2>
+
+            <p>HBK Kepenk sizlere hızlı ve garantili olarak motorlu kepenk tamir servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <h2>Motorlu Kepenk Sistemleri</h2>
+        
+            <p>Motorlu kepenk sistemleri, güvenlik ve kullanım kolaylığı sağladığı için günümüzde birçok iş yeri ve ev tarafından tercih edilmektedir. Estetik görünümleri ve sağlam yapılarıyla dikkat çeken motorlu kepenkler, düzenli bakım ve onarım gerektirmektedir. Bu nedenle, motorlu kepenklerin montaj, bakım ve onarım hizmetlerine duyulan ihtiyaç artmaktadır.</p>
+        
+            <h2>7/24 Acil Servis Hizmetleri</h2>
+        
+            <p>Firmamız, 1989 yılından beridir {$item} ve çevresindeki iş yerleri, evler ve diğer alanlarda kullanılan motorlu kepenkler için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <h3>Motorlu Kepenk Arızaları Nelerdir?</h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan motorlu kepenkler, farklı nedenlerden dolayı arıza verebilmektedir. Motorlu kepenk sistemlerinde sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Kepenk motorunda meydana gelen problemler, kepengin açılmasını ve kapanmasını engelleyebilir.</li>
+                <li><strong>Kontrol Paneli ve Kumanda Sorunları:</strong> Kepengin kontrol panelinde veya kumandasında meydana gelen arızalar, kepengin düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Mekanik Parça Problemleri:</strong> Kepengin mekanik parçalarında meydana gelen arızalar, kepengin işlevselliğini etkileyebilir.</li>
+                <li><strong>Elektrik ve Kablo Arızaları:</strong> Elektrik ve kablolarda meydana gelen sorunlar, kepengin düzgün çalışmasını engelleyebilir.</li>
+            </ol>
+        
+            <h2>İstanbul'un Her Noktasında Hizmet</h2>
+        
+            <p>HBK Kepenk olarak, İstanbul’un tüm bölgelerinde motorlu kepenk tamir ve bakım hizmeti sağlamaktayız. {$item} her noktasına kalite sertifikası ve uzman ustalarımız ile motorlu kepenk servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3>İletişim</h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+        ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+}); 
+
+Route::get('/bio', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 15)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2><strong>{$item} Bioclimatic Pergola ve Rolling Roof</strong></h2>
+
+    <p>HBK Kepenk sizlere hızlı ve garantili olarak bioclimatic pergola ve rolling roof montaj ve tamir servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+
+    <h2>{$item} Bioclimatic Pergola ve Rolling Roof Sistemleri</h2>
+
+    <p>Bioclimatic pergola ve rolling roof sistemleri, modern ve estetik tasarımlarıyla açık alanlarda konfor ve şıklığı bir araya getirmektedir. Hava koşullarına dayanıklı yapıları sayesinde yılın her döneminde kullanılabilen bu sistemler, evler, restoranlar, kafeler ve ticari alanlar için ideal çözümler sunmaktadır. Montaj, bakım ve onarım hizmetlerine duyulan ihtiyaç bu nedenle artmaktadır.</p>
+
+    <h2>$item} 7/24 Acil Servis ve Tamir Hizmetleri</h2>
+
+    <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki evler, iş yerleri ve diğer alanlarda kullanılan bioclimatic pergola ve rolling roof sistemleri için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+
+    <h3>Bioclimatic Pergola ve Rolling Roof Arızaları Nelerdir?</h3>
+
+    <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan bioclimatic pergola ve rolling roof sistemleri, farklı nedenlerden dolayı arıza verebilmektedir. Bu sistemlerde sıkça karşılaşılan arızalar şunlardır:</p>
+
+    <ol>
+        <li><strong>Motor Arızaları:</strong> Sistemlerin motorlarında meydana gelen problemler, açılma ve kapanmayı engelleyebilir.</li>
+        <li><strong>Kontrol Paneli ve Kumanda Sorunları:</strong> Kontrol paneli veya kumanda arızaları, sistemin düzgün çalışmasını engelleyebilir.</li>
+        <li><strong>Mekanik Parça Problemleri:</strong> Mekanik parçalarda meydana gelen arızalar, sistemin işlevselliğini etkileyebilir.</li>
+        <li><strong>Su Yalıtım Problemleri:</strong> Yalıtım sorunları, sistemin su geçirmezlik özelliğini zayıflatabilir.</li>
+    </ol>
+
+    <h2>HBK Kepenk: İstanbul'un Her Noktasında Hizmet</h2>
+
+    <p>HBK Kepenk olarak, İstanbul’un tüm bölgelerinde bioclimatic pergola ve rolling roof montaj ve tamir hizmeti sağlamaktayız. İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+
+    <h3>İletişim</h3>
+
+    <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
 ";
             $Edit->desc = $desc;
             $Edit->save();
