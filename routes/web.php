@@ -441,6 +441,56 @@ Route::get('/endustri', function(){
     
 });  
 
+Route::get('/zip', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 12)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<h2><strong>{$item} Zip Perde Montajı ve Tamiri<</strong></h2>
+
+            <p>HBK Kepenk sizlere hızlı ve garantili olarak zip perde montaj ve tamir servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <h2>{$item}  Zip Perde Sistemleri</h2>
+        
+            <p>Zip perde sistemleri, modern ve şık tasarımı ile günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır. Güneş ışığını kontrol etmek, mahremiyet sağlamak ve enerji tasarrufu yapmak amacıyla birçok ev ve iş yeri bu sistemi tercih etmektedir. Zip perdelerin montajı, bakım ve onarım hizmetlerine duyulan ihtiyaç bu nedenle artmaktadır.</p>
+        
+            <h2>HBK Kepenk: Güvenilir Servis Hizmetleri</h2>
+        
+            <p>Firmamız, 1991 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan zip perdeler için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <h3>Zip Perde Arızaları Nelerdir?</h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan zip perdeler, farklı nedenlerden dolayı arıza verebilmektedir. Zip perde sistemlerinde sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Perdenin motorunda meydana gelen problemler, perdenin açılmasını ve kapanmasını engelleyebilir.</li>
+                <li><strong>Mekanik Parça Sorunları:</strong> Perdenin mekanik parçalarında meydana gelen arızalar, perdenin düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Kontrol Ünitesi Problemleri:</strong> Perdenin kontrol ünitesinde meydana gelen arızalar, perdenin işlevselliğini kaybetmesine neden olabilir.</li>
+                <li><strong>Ray ve Kılavuz Sistem Arızaları:</strong> Perdenin ray ve kılavuz sisteminde meydana gelen sorunlar, perdenin düzgün hareket etmesini engelleyebilir.</li>
+            </ol>
+        
+            <h2>HBK Kepenk: İstanbul'un Her Noktasında Hizmet</h2>
+        
+            <p>HBK Kepenk olarak, {$item} tüm bölgelerinde zip perde montaj ve tamir hizmeti sağlamaktayız. İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile zip perde servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3>İletişim</h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+        ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+});  
+
 Route::group(["prefix"=>"go", 'middleware' => ['auth','web', 'admin']],function() {
     Route::get('/', 'DashboardController@index')->name('go');
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
