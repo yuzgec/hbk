@@ -41,6 +41,7 @@ Route::get('/ilceler', function(){
             
             <p>1989’dan bu yana, profesyonel ustalarımız ve kaliteli malzemeler ile kepenk tamiri hizmeti vermekteyiz. Otomatik kepenkler günlük hayatın birçok alanında sıkça kullanılmakta ve bu nedenle kepenk bakım, onarım ve servis gereksinimleri ortaya çıkmaktadır.</p>
             
+            <img src='https://www.istanbulkepenktamir.com/storage/16/Otomatik-Kepenk-Tamiri.jpg' class='img-fluid mb-3 mt-3' alt='{$item} Otomatik Kepenk Tamiri'>
             <h3><b>Karşılaşabileceğiniz Otomatik Kepenk Arızaları</b></h3>
             
             <p>Otomatik kepenkler zamanla çeşitli arızalar gösterebilir. Bu arızalardan bazıları şunlardır:</p>
@@ -106,13 +107,13 @@ Route::get('/fotoselli', function(){
         $Edit = Blog::find($row->id);
         if ($Edit) {
             $item = $istanbul[$index];
-            $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak 
-            <a href='https://www.istanbulkepenktamir.com/hizmet/otomatik-fotoselli-kapi-tamiri' title='{$item} Otomatik Fotoselli Kapı Tamiri'>otomatik fotoselli cam kapı tamir servis</a> hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
-        
-            <h3>{$item} Fotoselli Kapı Sistemleri</h3>
-        
+            $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak <a href='https://www.istanbulkepenktamir.com/hizmet/otomatik-fotoselli-kapi-tamiri' title='{$item} Otomatik Fotoselli Kapı Tamiri'>otomatik fotoselli cam kapı tamir servis</a> hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+                
             <p>Fotoselli kapı sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Bu sistemler fotoselli cam kapı, otomatik cam kapı veya fotosel kapı olarak da bilinmektedir. Estetik görünüşü ve kolay kullanımı sayesinde birçok işletme ve firma bu sistemi tercih etmeye başlamış ve böylece tamir, bakım ve onarım hizmetlerine duyulan ihtiyaç artmıştır.</p>
         
+
+            <img src='https://www.istanbulkepenktamir.com/storage/4/Fotoselli-kapi.jpg class='img-fluid mb-3 mt-3' alt='{$item} Otomatik Fotoselli Kepenk Tamiri'>
+
             <h3>HBK Kepenk: Güvenilir Servis Hizmetleri</h3>
         
             <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve apartman girişleri gibi alanlarda kullanılan fotoselli cam kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
