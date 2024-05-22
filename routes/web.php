@@ -41,7 +41,7 @@ Route::get('/ilceler', function(){
             
             <p>1989’dan bu yana, profesyonel ustalarımız ve kaliteli malzemeler ile kepenk tamiri hizmeti vermekteyiz. Otomatik kepenkler günlük hayatın birçok alanında sıkça kullanılmakta ve bu nedenle kepenk bakım, onarım ve servis gereksinimleri ortaya çıkmaktadır.</p>
             
-            <h4>Karşılaşabileceğiniz Otomatik Kepenk Arızaları</h4>
+            <h3><b>Karşılaşabileceğiniz Otomatik Kepenk Arızaları</b></h3>
             
             <p>Otomatik kepenkler zamanla çeşitli arızalar gösterebilir. Bu arızalardan bazıları şunlardır:</p>
             
@@ -67,7 +67,7 @@ Route::get('/ilceler', function(){
             
             <h3>{$item} Otomatik Kepenk Tamiri</h3>
             
-            <p>Kepenk sisteminiz çalışma esnasında fazla ses çıkarıyor, yamuk çalışıyor veya hiç çalışmıyorsa servisimiz ile iletişime geçmeniz gerekebilir. Bu tip problemler ile karşılaşmanız durumunda {$item} kepenk firması olarak bizlere <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a></p>
+            <p>Kepenk sisteminiz çalışma esnasında fazla ses çıkarıyor, yamuk çalışıyor veya hiç çalışmıyorsa servisimiz ile iletişime geçmeniz gerekebilir. Bu tip problemler ile karşılaşmanız durumunda {$item} kepenk firması olarak bizlere <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a></p>
             
             <p><strong>İstanbul Otomatik Kepenk Sistemleri</strong>, 1989’dan bu yana kepenk bakım, onarım ve montaj işlemleri gibi birçok servis hizmetini müşterilerine garantili ve hızlı şekilde gerçekleştirmektedir. Garaj girişi veya dükkân kapınızda bulunan otomatik kepenklerin açılmaması durumunda firmamızdan acil kepenk servisi talep edebilirsiniz.</p>
             
@@ -134,7 +134,7 @@ Route::get('/fotoselli', function(){
         
             <h3>İletişim</h3>
         
-            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
         ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -156,12 +156,12 @@ Route::get('/seksiyonel', function(){
         if ($Edit) {
             $item = $istanbul[$index];
             $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak <a href='https://www.istanbulkepenktamir.com/hizmet/seksiyonel-kapi-tamir-servisi' title='{$item} Seksiyonel Kapı Tamir Servisi'>seksiyonel kapı tamir servis </a>hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
-        
-            <h2><strong>{$item} Seksiyonel Kapı Sistemleri</h2>
-        
+                
             <p>Seksiyonel kapı sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Bu sistemler, estetik görünüşü ve kolay kullanımı sayesinde birçok işletme ve firma tarafından tercih edilmektedir. Seksiyonel kapılar, özellikle endüstriyel alanlarda ve garajlarda sıkça kullanılmakta olup, tamir, bakım ve onarım hizmetlerine duyulan ihtiyaç da artmıştır.</p>
         
-            <h2>{$item} Güvenilir Servis Hizmetleri</strong></h2>
+            <img src='https://www.istanbulkepenktamir.com/storage/12/Seksiyonel-Kap%C4%B1-Tamir-Servisi.jpg' alt='{$item} Seksiyonel Kapı Tamiri ve Montajı' class='img-fluid mt-3 mb-3'>
+
+            <h2><strong>{$item} Güvenilir Servis Hizmetleri</strong></h2>
         
             <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve endüstriyel alanlarda kullanılan seksiyonel kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
         
@@ -180,9 +180,9 @@ Route::get('/seksiyonel', function(){
         
             <p>{$item} her noktasına kalite sertifikası ve uzman ustalarımız ile seksiyonel kapı servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
         
-            <h3>İletişim</h3>
+            <h4><b>$item} Seksiyonel Kapı Arızaları iletişime geç</b></h4>
         
-            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
         ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -204,11 +204,11 @@ Route::get('/panjur', function(){
         if ($Edit) {
             $item = $istanbul[$index];
             $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak <a href='https://www.istanbulkepenktamir.com/hizmet/panjur-tamiri-ve-servisi' title='{$item} Panjur Sistemleri'>panjur tamir ve servis hizmetlerini </a>sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
-        
-            <h2><strong>{$item} Panjur Sistemleri</strong></h2>
-        
+                
             <p>Panjur sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Estetik görünüşü, güvenliği artırması ve enerji tasarrufu sağlaması nedeniyle birçok ev ve iş yeri bu sistemi tercih etmektedir. Bu durum, tamir, bakım ve onarım hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
         
+
+            <img src='https://www.istanbulkepenktamir.com/storage/14/I%CC%87stanbul-Panjur-Tamiri-ve-Servisi.jpg' alt='{$item} Panjur Tamiri ve Montajı' class='img-fluid mt-3 mb-3'>
             <h3><strong>7/24 Güvenilir Servis Hizmetleri</strong></h3>
         
             <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan panjur sistemleri için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
@@ -228,9 +228,9 @@ Route::get('/panjur', function(){
         
             <p>İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile panjur servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
         
-            <h3>İletişim</h3>
+            <h3><strong>{$item} Panjur Arızaları için iletişime geç</strong></h3>
         
-            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
          ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -253,15 +253,16 @@ Route::get('/doner', function(){
             $item = $istanbul[$index];
             $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak <a href='https://www.istanbulkepenktamir.com/hizmet/doner-kapi-montaj-ve-tamiri' title='{$item} Döner Kapı Montaj ve Tamiri'>döner kapı montaj ve tamir servis </a>hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
         
-            <h2>{$item} Döner Kapı Sistemleri</h2>
+            <h2><b>{$item} Döner Kapı Sistemleri</b></h2>
         
-            <p>Döner kapı sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Estetik görünüşü ve enerji tasarrufu sağlaması sayesinde birçok işletme ve firma bu sistemi tercih etmektedir. Bu durum, döner kapı montaj, bakım ve onarım hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
+            <p>Döner kapı sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Estetik görünüşü ve enerji tasarrufu sağlaması sayesinde birçok işletme ve firma bu sistemi tercih etmektedir. Bu durum, döner kapı Montaj, bakım ve onarım ve imalat hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
         
-            <h2>7/24 Güvenilir Servis Hizmetleri</h2>
+            <img src='https://www.istanbulkepenktamir.com/storage/3/Do%CC%88ner-kap%C4%B1-tamir-montaj%C4%B1.jpg' alt='{$item} Döner Kapı Sistemleri' class='img-fluid mt-t mb-3'>
+            <h2><b>7/24 Güvenilir Servis Hizmetleri</b></h2>
         
             <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan döner kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
         
-            <h3>Döner Kapı Arızaları Nelerdir?</h3>
+            <h3><b>Döner Kapı Arızaları Nelerdir?</b></h3>
         
             <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan döner kapılar, farklı nedenlerden dolayı arıza verebilmektedir. Döner kapılarda sıkça karşılaşılan arızalar şunlardır:</p>
         
@@ -272,7 +273,7 @@ Route::get('/doner', function(){
                 <li><strong>Mekanizma ve Parça Problemleri:</strong> Kapının mekanik parçalarında meydana gelen arızalar, kapının düzgün hareket etmesini engelleyebilir.</li>
             </ol>
         
-            <h2>İstanbul'un Her Noktasında Hizmet</h2>
+            <h3><b>İstanbul'un Her Noktasında Hizmet</b></h3>
         
             <p>HBK Kepenk olarak, İstanbul’un tüm ilçelerinde döner kapı montaj ve tamir hizmeti sağlamaktayız. Hizmet verdiğimiz ilçeler şunlardır:</p>
         
@@ -320,9 +321,9 @@ Route::get('/doner', function(){
         
             <p>İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile döner kapı montaj ve servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
         
-            <h3>İletişim</h3>
+            <h4><b>{$item} Döner Kapı Arızaları için iletişime geçin</b></h4>
         
-            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
         ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -344,16 +345,15 @@ Route::get('/garaj', function(){
         if ($Edit) {
             $item = $istanbul[$index];
             $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak <a href='https://www.istanbulkepenktamir.com/hizmet/garaj-kapisi-tamiri' title='{$item} Garaj Kapısı Tamiri'>garaj kapısı tamir ve servis </a>hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+                
+            <p>Garaj kapısı sistemleri günümüzde oldukça yaygın olarak kullanılmaktadır ve kullanım alanları giderek artmaktadır. Estetik görünüşü, güvenlik sağlaması ve kullanışlılığı sayesinde birçok ev ve iş yeri bu sistemi tercih etmektedir. Bu durum, garaj kapısı Montaj, bakım ve onarım ve imalat hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
         
-            <h2>{$item} Garaj Kapısı Sistemleri</h2>
-        
-            <p>Garaj kapısı sistemleri günümüzde oldukça yaygın olarak kullanılmaktadır ve kullanım alanları giderek artmaktadır. Estetik görünüşü, güvenlik sağlaması ve kullanışlılığı sayesinde birçok ev ve iş yeri bu sistemi tercih etmektedir. Bu durum, garaj kapısı montaj, bakım ve onarım hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
-        
-            <h2>7 gün 24 Saat Güvenilir Servis Hizmetleri</h2>
+            <h2><b>7 gün 24 Saat Güvenilir Servis Hizmetleri</b></h2>
         
             <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan garaj kapıları için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
         
-            <h3>Garaj Kapısı Arızaları Nelerdir?</h3>
+            <img src='https://www.istanbulkepenktamir.com/storage/13/Garaj-Kap%C4%B1s%C4%B1-Tamiri.jpg' alt='{$item} Garaj Kapısı Tamiri' class='img-fluid mb-3 mt-3'>
+            <h3><b>Garaj Kapısı Arızaları Nelerdir?</b></h3>
         
             <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan garaj kapıları, farklı nedenlerden dolayı arıza verebilmektedir. Garaj kapılarında sıkça karşılaşılan arızalar şunlardır:</p>
         
@@ -364,13 +364,13 @@ Route::get('/garaj', function(){
                 <li><strong>Ray ve Mekanizma Problemleri:</strong> Kapının ray ve mekanizmalarında meydana gelen sorunlar, kapının düzgün hareket etmesini engelleyebilir.</li>
             </ol>
         
-            <h2>İstanbul'un Her Noktasında Hizmet</h2>
+            <h2><b>İstanbul'un Her Noktasında Hizmet</b></h2>
         
             <p>HBK Kepenk olarak, İstanbul’un tüm bölgelerinde garaj kapısı montaj ve tamir hizmeti sağlamaktayız. İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile garaj kapısı servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
         
-            <h3>İletişim</h3>
+            <h4><b>{$item} Garaj Kapısı Arılarınız için hemen arayın</b></h4>
         
-            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere telefon numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
          ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -395,7 +395,7 @@ Route::get('/endustri', function(){
         
             <h2>Endüstriyel Kapı Sistemleri</h2>
         
-            <p>Endüstriyel kapı sistemleri, büyük ölçekli işletmelerde, fabrikalarda ve depolarda yaygın olarak kullanılmaktadır. Yüksek güvenlik, dayanıklılık ve kullanım kolaylığı sağlayan bu sistemler, endüstriyel alanlarda verimliliği artırmaktadır. Bu nedenle, endüstriyel kapıların montaj, bakım ve onarım hizmetlerine duyulan ihtiyaç artmaktadır.</p>
+            <p>Endüstriyel kapı sistemleri, büyük ölçekli işletmelerde, fabrikalarda ve depolarda yaygın olarak kullanılmaktadır. Yüksek güvenlik, dayanıklılık ve kullanım kolaylığı sağlayan bu sistemler, endüstriyel alanlarda verimliliği artırmaktadır. Bu nedenle, endüstriyel kapıların Montaj, bakım ve onarım ve imalat hizmetlerine duyulan ihtiyaç artmaktadır.</p>
         
             <h2>HBK Kepenk: Güvenilir Servis Hizmetleri</h2>
         
@@ -418,7 +418,7 @@ Route::get('/endustri', function(){
         
             <h3>İletişim</h3>
         
-            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
         ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -466,7 +466,7 @@ Route::get('/zip', function(){
         
             <h4><b>{$item} Zip Perde Arızaları için hemen iletişime geçin</b></h4>
         
-            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
         ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -514,7 +514,7 @@ Route::get('/bahce', function(){
         
             <h4><b>{$item} Bahçe Kapısı Sistemleri servisi için hemen iletişime geçin<b></h4>
         
-            <p>Bizlere telefon numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere telefon numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
          ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -560,9 +560,9 @@ Route::get('/bariyer', function(){
         
             <p>HBK Kepenk olarak, İstanbul’un tüm bölgelerinde bariyer tamir ve bakım hizmeti sağlamaktayız. İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile bariyer servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
         
-            <h3><b>{$item} Bariyer Sistemleri hemen işetişime geçin<b></h3>
+            <h3><b>{$item} Bariyer Sistemleri hemen işetişime geçin</b></h3>
         
-            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
          ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -586,14 +586,14 @@ Route::get('/pvc', function(){
             $item = $istanbul[$index];
             $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak <a href='https://www.istanbulkepenktamir.com/hizmet/hizli-pvc-branda-montaj-ve-tamiri' title='{$item} PVC Branda Sistemleri'>PVC branda montaj ve tamir servis </a>hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
 
-    <p>PVC branda sistemleri, dayanıklılığı ve kullanım kolaylığı sayesinde günümüzde birçok alanda tercih edilmektedir. Özellikle endüstriyel alanlar, depolar ve işletmeler için ideal bir çözüm sunan PVC brandalar, montaj, bakım ve onarım hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
+    <p>PVC branda sistemleri, dayanıklılığı ve kullanım kolaylığı sayesinde günümüzde birçok alanda tercih edilmektedir. Özellikle endüstriyel alanlar, depolar ve işletmeler için ideal bir çözüm sunan PVC brandalar, Montaj, bakım ve onarım ve imalat hizmetlerine duyulan ihtiyacın artmasına neden olmuştur.</p>
     <img src='https://www.istanbulkepenktamir.com/storage/11/H%C4%B1zl%C4%B1-PVC-Branda-Montaj-ve-Tamiri.jpg' alt='{$item} PVC Branda Sistemleri'' class='img-fluid mb-3 mt-3'>
 
     <h2><b>{$item} 7/24 Acil Güvenilir Servis Hizmetleri</b></h2>
 
     <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki endüstriyel alanlar, depolar ve işletmelerde kullanılan PVC brandalar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
 
-    <h3>PVC Branda Arızaları Nelerdir?</h3>
+    <h3><b>PVC Branda Arızaları Nelerdir?</b></h3>
 
     <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan PVC brandalar, farklı nedenlerden dolayı arıza verebilmektedir. PVC branda sistemlerinde sıkça karşılaşılan arızalar şunlardır:</p>
 
@@ -604,7 +604,7 @@ Route::get('/pvc', function(){
         <li><strong>Ray ve Kılavuz Sistem Arızaları:</strong> Brandanın ray ve kılavuz sistemlerinde meydana gelen sorunlar, brandanın düzgün hareket etmesini engelleyebilir.</li>
     </ol>
 
-    <h2>HBK Kepenk: İstanbul'un Her Noktasında Hizmet</h2>
+    <h2><b>HBK Kepenk: İstanbul'un Her Noktasında Hizmet</b></h2>
 
     <p>HBK Kepenk olarak, {$item} tüm bölgelerinde PVC branda montaj ve tamir hizmeti sağlamaktayız.
     {$item} her noktasına kalite sertifikası ve uzman ustalarımız ile PVC branda servis hizmeti 
@@ -612,9 +612,9 @@ Route::get('/pvc', function(){
     için uygun fiyatlı ve 7/24 hizmet vermekteyiz.
     </p>
 
-    <h3>İletişim</h3>
+    <h4><b>{$item} PVC Branda Arızalarınız için hemen arayın</h4>
 
-    <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+    <p>Bizlere telefon numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
     ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -637,15 +637,15 @@ Route::get('/motorlu', function(){
             $item = $istanbul[$index];
             $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak <a href='https://www.istanbulkepenktamir.com/hizmet/motorlu-kepenk-tamiri' title='{$item} Motorlu Kepenk Sistemleri'>motorlu kepenk tamir servis </a>hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
                 
-            <p>Motorlu kepenk sistemleri, güvenlik ve kullanım kolaylığı sağladığı için günümüzde birçok iş yeri ve ev tarafından tercih edilmektedir. Estetik görünümleri ve sağlam yapılarıyla dikkat çeken motorlu kepenkler, düzenli bakım ve onarım gerektirmektedir. Bu nedenle, motorlu kepenklerin montaj, bakım ve onarım hizmetlerine duyulan ihtiyaç artmaktadır.</p>
+            <p>Motorlu kepenk sistemleri, güvenlik ve kullanım kolaylığı sağladığı için günümüzde birçok iş yeri ve ev tarafından tercih edilmektedir. Estetik görünümleri ve sağlam yapılarıyla dikkat çeken motorlu kepenkler, düzenli bakım ve onarım gerektirmektedir. Bu nedenle, motorlu kepenklerin Montaj, bakım ve onarım ve imalat hizmetlerine duyulan ihtiyaç artmaktadır.</p>
         
-            <h2>7/24 Acil Servis Hizmetleri</h2>
+            <h2><b>{$item} 7/24 Acil Servis Hizmetleri</b></h2>
         
             <p>Firmamız, 1989 yılından beridir {$item} ve çevresindeki iş yerleri, evler ve diğer alanlarda kullanılan motorlu kepenkler için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
         
             <img src='https://www.istanbulkepenktamir.com/storage/15/I%CC%87stanbul-Motorlu-Kepenk-Tamiri-.jpg' alt='{$item} Motorlu Kepenk Sistemleri' class='img-fluid mb-3 mt-3'>
 
-            <h3>Motorlu Kepenk Arızaları Nelerdir?</h3>
+            <h3><b>Motorlu Kepenk Arızaları Nelerdir?</b></h3>
         
             <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan motorlu kepenkler, farklı nedenlerden dolayı arıza verebilmektedir. Motorlu kepenk sistemlerinde sıkça karşılaşılan arızalar şunlardır:</p>
         
@@ -656,13 +656,13 @@ Route::get('/motorlu', function(){
                 <li><strong>Elektrik ve Kablo Arızaları:</strong> Elektrik ve kablolarda meydana gelen sorunlar, kepengin düzgün çalışmasını engelleyebilir.</li>
             </ol>
         
-            <h2>İstanbul'un Her Noktasında Hizmet</h2>
+            <h2><b>İstanbul'un Her Noktasında Hizmet</b></h2>
         
             <p>HBK Kepenk olarak, İstanbul’un tüm bölgelerinde motorlu kepenk tamir ve bakım hizmeti sağlamaktayız. {$item} her noktasına kalite sertifikası ve uzman ustalarımız ile motorlu kepenk servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
         
-            <h3>İletişim</h3>
+            <h4><b>{$item} Motorlu Kepenk Arızaları için hemen iletişime geçin</b></h4>
         
-            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
         ";
             $Edit->desc = $desc;
             $Edit->save();
@@ -685,7 +685,7 @@ Route::get('/bio', function(){
             $item = $istanbul[$index];
             $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak <a href='https://www.istanbulkepenktamir.com/hizmet/bioclimatic-pergola-rolling-roof' title='{$item} Bioclimatic Pergola ve Rolling Roof Sistemleri'>bioclimatic pergola ve rolling roof montaj ve tamir servis </a>hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
 
-    <p>Bioclimatic pergola ve rolling roof sistemleri, modern ve estetik tasarımlarıyla açık alanlarda konfor ve şıklığı bir araya getirmektedir. Hava koşullarına dayanıklı yapıları sayesinde yılın her döneminde kullanılabilen bu sistemler, evler, restoranlar, kafeler ve ticari alanlar için ideal çözümler sunmaktadır. Montaj, bakım ve onarım hizmetlerine duyulan ihtiyaç bu nedenle artmaktadır.</p>
+    <p>Bioclimatic pergola ve rolling roof sistemleri, modern ve estetik tasarımlarıyla açık alanlarda konfor ve şıklığı bir araya getirmektedir. Hava koşullarına dayanıklı yapıları sayesinde yılın her döneminde kullanılabilen bu sistemler, evler, restoranlar, kafeler ve ticari alanlar için ideal çözümler sunmaktadır. Montaj, bakım ve onarım ve imalat hizmetlerine duyulan ihtiyaç bu nedenle artmaktadır.</p>
 
     <h2><b>{$item} 7/24 Acil Servis ve Tamir Hizmetleri</b></h2>
 
@@ -708,9 +708,9 @@ Route::get('/bio', function(){
 
     <p>HBK Kepenk olarak, İstanbul’un tüm bölgelerinde bioclimatic pergola ve rolling roof montaj ve tamir hizmeti sağlamaktayız. İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
 
-    <h3>İletişim</h3>
+    <h3><b>{$item} Bioclimatic Pergola ve Rolling Roof Arızaları için hemen hizmete geçin.</b></h3>
 
-    <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'>ulaşabilirsiniz.</a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+    <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
  ";
             $Edit->desc = $desc;
             $Edit->save();
