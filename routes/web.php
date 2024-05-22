@@ -671,6 +671,7 @@ Route::get('/motorlu', function(){
     
 }); 
 
+
 Route::get('/bio', function(){
     $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
     $a = Blog::where('service', 15)->get();
@@ -712,6 +713,99 @@ Route::get('/bio', function(){
 
     <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
  ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+}); 
+
+Route::get('/mega', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 11)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak mega kapı montaj ve bakım servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+                
+            <p>Mega kapı sistemleri, geniş giriş alanlarına sahip endüstriyel ve ticari binalar için mükemmel çözümler sunmaktadır. Yüksek güvenlik, dayanıklılık ve kullanım kolaylığı sağlayan bu sistemler, büyük araçların ve ekipmanların kolayca geçiş yapabilmesi için idealdir. Mega kapıların montajı, düzenli bakım ve onarım hizmetlerine duyulan ihtiyaç bu nedenle artmaktadır.</p>
+        
+            <h3><b>7/24 Servis Hizmetleri</b></h3>
+        
+            <p>Firmamız, 1989 yılından beridir {$item} ve çevresindeki endüstriyel ve ticari binalarda kullanılan mega kapılar için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+            <img src='https://www.istanbulkepenktamir.com/storage/7/Mega-Kap%C4%B1-Tamir-ve-Montaj%C4%B1.jpg' class='img-fluid mb-3 mt-3' alt='{$item} Mega Kapı Montajı ve Bakımı'>
+            <h3><b>Mega Kapı Arızaları Nelerdir?</b></h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan mega kapılar, farklı nedenlerden dolayı arıza verebilmektedir. Mega kapı sistemlerinde sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Kapının motorunda meydana gelen problemler, kapının açılmasını ve kapanmasını engelleyebilir.</li>
+                <li><strong>Kontrol Paneli ve Sensör Sorunları:</strong> Kapının kontrol panelinde veya sensörlerinde meydana gelen arızalar, kapının düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Mekanik Parça Problemleri:</strong> Kapının mekanik parçalarında meydana gelen arızalar, kapının işlevselliğini etkileyebilir.</li>
+                <li><strong>Elektrik ve Kablo Arızaları:</strong> Elektrik ve kablolarda meydana gelen sorunlar, kapının düzgün çalışmasını engelleyebilir.</li>
+            </ol>
+        
+            <h2><b>İstanbul'un Her Noktasında Hizmet</b></h2>
+        
+            <p>HBK Kepenk olarak, {$item} tüm bölgelerinde mega kapı montaj ve bakım hizmeti sağlamaktayız. İstanbul’un her noktasına kalite sertifikası ve uzman ustalarımız ile mega kapı servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h4><b>{$item} Mega Kapı Tamiri</b> için iletişime geç</h4>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+        ";
+            $Edit->desc = $desc;
+            $Edit->save();
+        }
+    }
+    
+}); 
+
+Route::get('/pergole', function(){
+    $istanbul = ["İstanbul","Arnavutköy", "Avcılar","Ataşehir", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", 'Beşiktaş','Beylikdüzü', "Beykoz", "Beyoğlu", "Büyükçekmece","Çekmeköy", "Çatalca", "Eminönü", "Esenler", "Esenyurt","Eyüp", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sarıyer", "Silivri", "Sancaktepe","Sultangazi","Şile", "Şişli", "Sultanbeyli", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"];
+    $a = Blog::where('service', 9)->get();
+    
+    if (count($istanbul) !== count($a)) {
+        throw new Exception("İlçe sayısı ile blog sayısı eşleşmiyor");
+    }
+    
+    foreach ($a as $index => $row) {
+        $Edit = Blog::find($row->id);
+        if ($Edit) {
+            $item = $istanbul[$index];
+            $desc = "<p>HBK Kepenk sizlere hızlı ve garantili olarak pergola tente montaj ve bakım servis hizmetlerini sağlamaktadır. 7/24 güvenilir ve kurumsal hizmet sunmaktayız.</p>
+        
+            <p>Pergola tente sistemleri, açık alanlarda konfor ve estetik sağlamak amacıyla günümüzde oldukça yaygın olarak kullanılmaktadır. Bu sistemler, özellikle restoranlar, kafeler, bahçeler ve teraslar için ideal çözümler sunmaktadır. Hava koşullarına dayanıklı ve kullanışlı yapıları sayesinde pergola tentelerin montajı, düzenli bakım ve onarım hizmetlerine duyulan ihtiyaç artmaktadır.</p>
+        
+            <h2><b>{$item}  7/24 Servis ve Tamir Hizmetleri</b></h2>
+        
+            <p>Firmamız, 1991 yılından beridir İstanbul ve çevresindeki evler, iş yerleri ve diğer alanlarda kullanılan pergola tente sistemleri için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
+        
+            <img src='https://www.istanbulkepenktamir.com/storage/9/Pergole-Tamir-ve-Montaj%C4%B1-I%CC%87stanbul.jpg' class='img-fluid mt-3 mb-3' alt='{$item} Pergola Tente Montajı ve Bakımı'>
+            <h3><b>Pergola Tente Arızaları Nelerdir?</b></h3>
+        
+            <p>Günümüzde birçok yerde sıkça kullanılmaya başlayan pergola tenteler, farklı nedenlerden dolayı arıza verebilmektedir. Pergola tente sistemlerinde sıkça karşılaşılan arızalar şunlardır:</p>
+        
+            <ol>
+                <li><strong>Motor Arızaları:</strong> Tentelerin motorlarında meydana gelen problemler, açılma ve kapanmayı engelleyebilir.</li>
+                <li><strong>Kontrol Paneli ve Kumanda Sorunları:</strong> Kontrol paneli veya kumandada meydana gelen arızalar, sistemin düzgün çalışmasını engelleyebilir.</li>
+                <li><strong>Mekanik Parça Problemleri:</strong> Tentelerin mekanik parçalarında meydana gelen arızalar, sistemin işlevselliğini etkileyebilir.</li>
+                <li><strong>Yırtılma ve Aşınmalar:</strong> Tente kumaşında meydana gelen yırtılma ve aşınmalar, sistemin performansını olumsuz etkileyebilir.</li>
+            </ol>
+        
+            <h2><b>İstanbul'un Her Noktasında Hizmet</b></h2>
+        
+            <p>HBK Kepenk olarak, {$item}  tüm bölgelerinde pergola tente montaj ve bakım hizmeti sağlamaktayız. {$item} her noktasına kalite sertifikası ve uzman ustalarımız ile pergola tente servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
+        
+            <h3><b>{$item} Pergola Tente Arızaları için iletişime geç</b></h3>
+        
+            <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan ulaşabilirsiniz. HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
+        ";
             $Edit->desc = $desc;
             $Edit->save();
         }
