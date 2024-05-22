@@ -111,7 +111,7 @@ Route::get('/fotoselli', function(){
                 
             <p>Fotoselli kapı sistemleri günümüzde oldukça yaygın olarak kullanılmaya başlanmıştır ve kullanım alanları giderek artmaktadır. Bu sistemler fotoselli cam kapı, otomatik cam kapı veya fotosel kapı olarak da bilinmektedir. Estetik görünüşü ve kolay kullanımı sayesinde birçok işletme ve firma bu sistemi tercih etmeye başlamış ve böylece tamir, bakım ve onarım hizmetlerine duyulan ihtiyaç artmıştır.</p>
         
-            <img src='https://www.istanbulkepenktamir.com/storage/4/Fotoselli-kapi.jpg class='img-fluid mb-3 mt-3' alt='{$item} Otomatik Fotoselli Kepenk Tamiri'>
+            <img src='https://www.istanbulkepenktamir.com/storage/4/Fotoselli-kapi.jpg' class='img-fluid mb-3 mt-3' alt='{$item} Otomatik Fotoselli Kepenk Tamiri'>
 
             <h3>HBK Kepenk: Güvenilir Servis Hizmetleri</h3>
         
