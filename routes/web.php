@@ -495,7 +495,7 @@ Route::get('/bahce', function(){
         
             <p>Firmamız, 1989 yılından beridir İstanbul ve çevresindeki ev, iş yeri ve diğer alanlarda kullanılan bahçe kapıları için servis hizmeti sağlamaktadır. Uzman ekibimiz ve kalite sertifikalarımız ile sizlere en iyi hizmeti sunmayı amaçlamaktayız.</p>
             
-            <img src='hhttps://www.istanbulkepenktamir.com/storage/1/bahce-kapi-tamiri.jpg' alt='{$item} Bahçe Kapısı Sistemleri' class='img-fluid mb-3 mt-3'>
+            <img src='https://www.istanbulkepenktamir.com/storage/1/bahce-kapi-tamiri.jpg' alt='{$item} Bahçe Kapısı Sistemleri' class='img-fluid mb-3 mt-3'>
 
             <h3><b>Bahçe Kapısı Arızaları Nelerdir?</b></h3>
         
