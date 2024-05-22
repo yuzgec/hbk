@@ -180,7 +180,7 @@ Route::get('/seksiyonel', function(){
         
             <p>{$item} her noktasına kalite sertifikası ve uzman ustalarımız ile seksiyonel kapı servis hizmeti sağlamaya devam ediyoruz. Sizlere en yakın servis noktalarımızla hızlıca ulaşarak tüm arızalarınız için uygun fiyatlı ve 7/24 hizmet vermekteyiz.</p>
         
-            <h4><b>$item} Seksiyonel Kapı Arızaları iletişime geç</b></h4>
+            <h4><b>{$item} Seksiyonel Kapı Arızaları iletişime geç</b></h4>
         
             <p>Bizlere iletişim numaralarımızdan, canlı destek hattımızdan ve sosyal medya hesaplarımızdan <a href='https://www.istanbulkepenktamir.com/iletisim' title='İletişime Geç'><b>ulaşabilirsiniz.</b></a> HBK Kepenk olarak müşteri memnuniyetini en üst düzeyde tutarak, sizlere en iyi hizmeti sunmayı hedeflemekteyiz.</p>
         ";
