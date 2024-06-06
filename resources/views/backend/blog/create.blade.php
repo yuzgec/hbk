@@ -26,7 +26,6 @@
               <div class="card-body">
 
                       <x-form-inputtext label="Başlık Adı Giriniz" name="title"/>
-                      <x-form-select label="Kategori" name="category" :list="$Kategori"/>
                       <x-form-textarea label="Kısa Açıklama" name="short" :ck=null/>
                       <x-form-textarea label="Açıklama" name="desc" />
 

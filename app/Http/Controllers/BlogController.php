@@ -12,8 +12,9 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $All = Blog::with('getCategory')->orderBy('rank')->get();
+        $All = Blog::with('getCategory')->orderBy('rank')->where('category', \request('category'))->paginate(30);
         $Kategori = BlogCategory::all();
+
         return view('backend.blog.index', compact('All', 'Kategori'));
     }
 
@@ -49,7 +50,7 @@ class BlogController extends Controller
 
         $New->save();
         toast(SWEETALERT_MESSAGE_CREATE,'success');
-        return redirect()->route('blog.index');
+        return redirect()->route('service.index',['category' => $request->category, 'name' => $request->name]);
 
     }
 
@@ -64,8 +65,7 @@ class BlogController extends Controller
     public function edit($id)
     {
         $Edit = Blog::findOrFail($id);
-        $Kategori = BlogCategory::pluck('title', 'id');
-        return view('backend.blog.edit', compact('Edit', 'Kategori'));
+        return view('backend.blog.edit', compact('Edit'));
     }
 
     public function update(PageRequest $request, $id)
@@ -98,7 +98,7 @@ class BlogController extends Controller
         }
 
         toast(SWEETALERT_MESSAGE_UPDATE,'success');
-        return redirect()->route('blog.index');
+        return redirect()->route('service.index',['category' => $request->category, 'name' => $request->name]);
 
     }
 
