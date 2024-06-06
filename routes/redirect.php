@@ -10,6 +10,8 @@ Route::redirect('/news.php', '/makaleler', 301);
 Route::redirect('/hakkimizda.php', '/sayfa/hakkimizda', 301);
 Route::redirect('/beykoz-kepenk-tamiri.htm', '/hizmetbolgesi/beykoz-otomatik-kepenk-tamiri', 301);
 Route::redirect('/acibadem-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
+Route::redirect('/pendik-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
+Route::redirect('/gaziosmanpasa-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
 Route::redirect('/goztepe-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
 Route::redirect('/kozyatagi-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
 Route::redirect('/eminonu-kepenk-tamiri.htm',  '/hizmet/otomatik-kepenk-tamiri', 301);
